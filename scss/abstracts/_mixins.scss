@@ -1,0 +1,8 @@
+@use "sass:map";
+@use "./variables" as v;
+
+@mixin card-rank($color: v.$text-primary) {
+  font-size: map.get(v.$font-sizes, subtitle);
+  font-weight: map.get(v.$font-weights, regular);
+  color: $color;
+}
