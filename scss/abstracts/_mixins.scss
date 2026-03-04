@@ -6,3 +6,20 @@
   font-weight: map.get(v.$font-weights, regular);
   color: $color;
 }
+
+@mixin btn {
+  background-color: rgba($bg-secondary, 0.5);
+  color: $nav-active-text;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  font-family: v.$font-base;
+  cursor: pointer;
+    &:active {
+      background-color:map.get(v.$nav-active-button);
+      color: black;
+      font-weight: map.get(v.$font-weight,bold);
+      transition: 0.3s;
+    }
+}
