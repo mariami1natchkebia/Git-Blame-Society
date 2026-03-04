@@ -1,18 +1,52 @@
-/* Error: Undefined variable.
- *   ,
- * 7 |     font-family: v.$font-base;
- *   |                  ^^^^^^^^^^^^
- *   '
- *   scss\base\_reset.scss 7:18  @use
- *   scss\main.scss 7:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 7 \2502      font-family: v.$font-base;\d\a   \2502                   ^^^^^^^^^^^^\a   \2575 \a   scss\\base\\_reset.scss 7:18  @use\a   scss\\main.scss 7:1          root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.section-title, .section-subtitle, .card-title {
+  color: #E0E0E0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.card-title {
+  font-size: clamp(1.162rem, 1.095rem + 0.276vw, 1.4rem);
+}
+
+.card-subtitle {
+  font-size: clamp(0.996rem, 0.938rem + 0.236vw, 1.2rem);
+  color: #898989;
+}
+
+.nav-text {
+  font-size: clamp(1.162rem, 1.095rem + 0.276vw, 1.4rem);
+  color: #898989;
+}
+
+/*# sourceMappingURL=style.css.map */
