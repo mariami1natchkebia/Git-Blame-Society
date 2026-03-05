@@ -30,7 +30,7 @@
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
-  color: $text-secondary;
+  color: v.$text-secondary;
   font-size: 1.4rem;
   border: none;
   border-radius: 0.8rem;
@@ -42,7 +42,7 @@
           color: white;
       }
           &:active {
-              background-color:$bg-primary;
+              background-color:v.$bg-primary;
               color: white
           }
 

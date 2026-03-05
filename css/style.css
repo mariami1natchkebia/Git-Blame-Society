@@ -49,4 +49,60 @@ body {
   color: #898989;
 }
 
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 54px;
+}
+
+.main-navigation button {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  color: #898989;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.8rem;
+  min-width: 19.6rem;
+  padding: 0.3rem 0 0.3rem 1.1rem;
+  gap: 0.9rem;
+  cursor: pointer;
+}
+.main-navigation button:hover {
+  color: white;
+}
+.main-navigation button:active {
+  background-color: #111111;
+  color: white;
+}
+.main-navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.main-navigation img {
+  width: 30px;
+  height: 30px;
+}
+
+.actions ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.actions img {
+  width: 24px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.home:active {
+  background-color: #111111;
+}
+
 /*# sourceMappingURL=style.css.map */
