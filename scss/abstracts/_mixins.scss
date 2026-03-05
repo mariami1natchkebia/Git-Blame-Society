@@ -7,7 +7,7 @@
   color: $color;
 }
 
-@mixin btn {
+@mixin filter-chip {
   background-color: rgba($bg-secondary, 0.5);
   color: $nav-active-text;
   padding: 0.8rem 1.5rem;
