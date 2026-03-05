@@ -1,2 +1,44 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 54px
+}
+
+.main-navigation {
+    button {
+        @include m.nav-button;
+    }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+}
+
+.actions {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+        img {
+            width: 24px;
+            height: 25px;
+            background-color: transparent;
+        }
+
+}
+
+.home:active {
+        background-color:v.$bg-primary
+}

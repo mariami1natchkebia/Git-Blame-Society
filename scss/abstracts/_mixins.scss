@@ -7,7 +7,7 @@
   color: $color;
 }
 
-@mixin btn {
+@mixin filter-chip {
   background-color: rgba($bg-secondary, 0.5);
   color: $nav-active-text;
   padding: 0.8rem 1.5rem;
@@ -22,4 +22,28 @@
       font-weight: map.get(v.$font-weight,bold);
       transition: 0.3s;
     }
+}
+
+@mixin nav-button {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  color: v.$text-secondary;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.8rem;
+  min-width: 19.6rem;
+  padding: 0.3rem 0 0.3rem 1.1rem;
+  gap: 0.9rem ;
+  cursor: pointer;
+      &:hover {
+          color: white;
+      }
+          &:active {
+              background-color:v.$bg-primary;
+              color: white
+          }
+
 }
