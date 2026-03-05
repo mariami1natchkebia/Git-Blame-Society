@@ -6,12 +6,12 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    height: 54px
+    height: 54px;
 }
 
 .main-navigation {
     button {
-        @include m.nav-button;
+        @include m.filter-chip;
     }
         ul {
             display: flex;
