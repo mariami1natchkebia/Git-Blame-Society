@@ -1,112 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 11 |   background-color: rgba($bg-secondary, 0.5);
+ *    |                          ^^^^^^^^^^^^^
+ *    '
+ *   scss\abstracts\_mixins.scss 11:26  btn()
+ *   scss\components\_buttons.scss 6:5  @use
+ *   scss\main.scss 12:1                root stylesheet */
 
-a {
-  text-decoration: none;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 11 \2502    background-color: rgba($bg-secondary, 0.5);\d\a    \2502                           ^^^^^^^^^^^^^\a    \2575 \a   scss\\abstracts\\_mixins.scss 11:26  btn()\a   scss\\components\\_buttons.scss 6:5  @use\a   scss\\main.scss 12:1                root stylesheet";
 }
-
-li {
-  list-style: none;
-}
-
-button {
-  border: none;
-  background-color: transparent;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body, button {
-  font-family: "Satoshi", sans-serif;
-  letter-spacing: 0.03em;
-}
-
-.section-title, .section-subtitle, .card-title {
-  color: #E0E0E0;
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.section-subtitle {
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-
-.card-title {
-  font-size: clamp(1.162rem, 1.095rem + 0.276vw, 1.4rem);
-}
-
-.card-subtitle {
-  font-size: clamp(0.996rem, 0.938rem + 0.236vw, 1.2rem);
-  color: #898989;
-}
-
-.nav-text {
-  font-size: clamp(1.162rem, 1.095rem + 0.276vw, 1.4rem);
-  color: #898989;
-}
-
-.player-bar {
-  background-color: #333842;
-  border-radius: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 1.2rem 1.83rem 1.2rem 2.1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-.player-left, .player-center, .timeline, .player-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.player-left {
-  gap: 0.5rem;
-}
-
-.timeline {
-  padding: 0.4rem 0;
-  gap: 0.9rem;
-}
-
-.progress {
-  width: 31.7rem;
-  border-radius: 0.5rem;
-  height: 0.3rem;
-  background-color: rgba(137, 137, 137, 0.27);
-}
-.progress .progress-fill {
-  background-color: #D9D9D9;
-  height: 100%;
-  width: 45%;
-  border-radius: 0.5rem;
-}
-
-.player-center {
-  gap: 1rem;
-}
-
-.divider-line {
-  height: 3.6rem;
-  border: 0.2rem solid rgba(137, 137, 137, 0.3);
-}
-
-.player-right {
-  gap: 0.631rem;
-}
-
-/*# sourceMappingURL=style.css.map */
