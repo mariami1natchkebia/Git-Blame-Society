@@ -24,26 +24,9 @@
     }
 }
 
-@mixin nav-button {
-  background-color: transparent;
+@mixin flex($justify: center, $align: center, $direction: row) {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-items: center;
-  color: v.$text-secondary;
-  font-size: 1.4rem;
-  border: none;
-  border-radius: 0.8rem;
-  min-width: 19.6rem;
-  padding: 0.3rem 0 0.3rem 1.1rem;
-  gap: 0.9rem ;
-  cursor: pointer;
-      &:hover {
-          color: white;
-      }
-          &:active {
-              background-color:v.$bg-primary;
-              color: white
-          }
-
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }

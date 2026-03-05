@@ -1,2 +1,50 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+
+.player-bar{
+    background-color: v.$player-bg;
+    border-radius: 1rem;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    padding:1.2rem 1.83rem 1.2rem 2.1rem;
+    @include m.flex($justify:space-between);
+}
+
+.player-left, .player-center, .timeline, .player-right{
+    @include m.flex();
+}
+
+.player-left {
+    gap:0.5rem;
+}
+
+.timeline {
+    padding: 0.4rem 0;
+    gap:0.9rem;
+}
+.progress{
+    width:31.7rem;
+    border-radius: 0.5rem;
+    height:0.3rem;
+    background-color:rgba(137, 137, 137, 0.27);
+    .progress-fill {
+        background-color:#D9D9D9;
+        height:100%;
+        width:45%;
+        border-radius: 0.5rem;
+    }
+}
+
+.player-center{
+    gap:1rem;
+}
+
+.divider-line{
+    height:3.6rem;
+    border:0.2rem solid rgba(137, 137, 137, 0.3);
+}
+
+.player-right {
+    gap:0.631rem;  
+}

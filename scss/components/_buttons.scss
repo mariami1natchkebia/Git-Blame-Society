@@ -1,7 +1,23 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
-.filter {
-    @include m.filter-chip;
+.nav-bar-button {
+    @include m.btn;
 }
 
+.icon-btn {
+    color:v.$text-secondary;
+    width: 3.802rem;
+    height: 3.802rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    @include m.flex();
+
+    &.icon-active {
+        background-color: v.$primary-accent;
+    }
+    :active{
+        color:v.$nav-active-button;
+    }
+}
