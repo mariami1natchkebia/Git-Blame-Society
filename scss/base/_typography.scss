@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as v;
 @use "sass:map";
 
-body {
+body, button {
     font-family: v.$font-base;
     letter-spacing: 0.03em;
 }
