@@ -1,8 +1,7 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
-@use "sass:map";
 
 .filter {
-    @include filter-chip;
+    @include m.filter-chip;
 }
 
