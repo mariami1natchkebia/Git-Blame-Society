@@ -1,0 +1,106 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+@use "sass:map";
+
+/* Album Components */
+
+
+
+
+// Reccomendation-Cards styles
+
+.recommendation-card {
+    width: 17rem;
+    color: v.$text-primary;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    row-gap: 0.9rem;       
+}
+
+.title {
+    font-size: map.get(v.$font-size, subtitle);
+    font-weight: map.get(v.$font-weight, regular);
+}
+
+.number {
+    color: (#CE6E9A);
+    font-size: map.get(v.$font-size, subtitle);
+    font-weight: map.get(v.$font-weight, regular);
+}
+
+.album-cover {
+    border-radius: 0.8rem;
+    z-index:3;
+    position:relative;
+    top:0.6rem;
+}
+
+.album-description {
+    color:v.$text-secondary;
+    font-size: 1.2rem;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 0.9rem;
+}
+
+
+
+.background-shadow {
+    width: 15.4rem;
+    height: 0.6rem;
+    border-top-left-radius: 0.725rem;
+    border-top-right-radius: 0.725rem;
+    background-color: rgba(#95E6D3, 0.3);
+    z-index: 2;
+    position: absolute;
+    top: -0.1rem;
+    left: 1rem;
+}
+
+.background-shadow2 {
+    width: 13.3rem;
+    height: 0.3rem;
+    border-top-left-radius: 0.725rem;
+    border-top-right-radius: 0.725rem;
+    background-color: rgba(#95E6D3, 0.15);
+    z-index: 1;
+    position: absolute;
+    top: -0.5rem;
+    left:2rem;
+}
+
+
+// Genre-Albums styles
+
+.genre-album {
+    display: flex;
+    padding-left: 2rem;
+    width: 17rem;
+    height: 17rem;
+    color: v.$text-secondary;
+    background-color: #1E3264;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+        .genre-title {
+            padding-top: 2rem ;
+            color: v.$nav-active-text;
+            font-size: map.get(v.$font-size, heading);
+            font-weight: map.get(v.$font-weight, bold);  
+            width: 9rem;         
+        }
+   }
+ 
+.album-image {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(30deg);
+    right: -1.5rem;
+    bottom: -1.5rem;
+}   
