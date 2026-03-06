@@ -2,14 +2,14 @@
 @use "./variables" as v;
 
 @mixin card-rank($color: v.$text-primary) {
-  font-size: map.get(v.$font-sizes, subtitle);
-  font-weight: map.get(v.$font-weights, regular);
+  font-size: map.get(v.$font-size, subtitle);
+  font-weight: map.get(v.$font-weight, regular);
   color: $color;
 }
 
 @mixin filter-chip {
-  background-color: rgba($bg-secondary, 0.5);
-  color: $nav-active-text;
+  background-color: rgba(v.$bg-secondary, 0.5);
+  color: v.$nav-active-text;
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 0.8rem;
@@ -17,7 +17,7 @@
   font-family: v.$font-base;
   cursor: pointer;
     &:active {
-      background-color:map.get(v.$nav-active-button);
+      background-color:v.$nav-active-button;
       color: black;
       font-weight: map.get(v.$font-weight,bold);
       transition: 0.3s;

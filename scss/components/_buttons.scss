@@ -2,7 +2,7 @@
 @use "../abstracts/variables" as v;
 
 .nav-bar-button {
-    @include m.btn;
+    @include m.filter-chip;
 }
 
 .icon-btn {
@@ -15,7 +15,7 @@
     @include m.flex();
 
     &.icon-active {
-        background-color: v.$primary-accent;
+        background-color:v.$primary-accent;
     }
     :active{
         color:v.$nav-active-button;
