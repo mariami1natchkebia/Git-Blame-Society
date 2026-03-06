@@ -1,9 +1,9 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
-.nav-bar-button {
-    @include m.filter-chip;
-}
+.navigation-button {
+    @include m.nav-button;
+  } 
 
 .icon-btn {
     color:v.$text-secondary;
