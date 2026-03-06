@@ -1,2 +1,27 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+
+.app-layout{
+    min-height: 100vh;
+    background-color: v.$bg-main;
+    display: flex;
+    padding:0.3rem 0.7rem 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: none;
+    @media (max-width:v.$bp-desktop){
+        display: flex;
+    }
+}
+
+aside{
+    width:25.9rem;
+    @media (max-width:v.$bp-desktop){
+        display: none;
+    }
+}
