@@ -65,3 +65,32 @@
   align-items: $align;
   flex-direction: $direction;
 }
+
+@mixin sidebar-menu($icon-size) {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  height: v.$side-item-height;
+  gap: v.$side-item-gap;
+  padding: 15px;
+  width: 100%;  
+  
+  img:first-child {
+    width: $icon-size;
+    height: $icon-size;
+  }
+
+  span {
+    font-size: map.get(v.$font-size, paragraph);
+    font-weight: map.get(v.$font-weight, medium);
+    color: v.$text-secondary;
+    flex-grow: 1;
+    line-height: 1;
+  }
+
+  img:last-child:not(:first-child) {
+    width: 16px;
+    height: 16px;
+    
+  } 
+}
