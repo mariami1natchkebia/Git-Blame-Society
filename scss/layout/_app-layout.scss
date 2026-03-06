@@ -12,6 +12,7 @@ main {
     flex: 1;
 }
 
+
 footer {
     display: none;
     @media (max-width:v.$bp-desktop){
@@ -20,7 +21,7 @@ footer {
 }
 
 aside{
-    width:25.9rem;
+    width: clamp(20rem, 20vw, 25.9rem);
     @media (max-width:v.$bp-desktop){
         display: none;
     }
