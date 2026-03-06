@@ -20,6 +20,10 @@
         }
 }
 
+.album-wrapper {
+    margin-top: 3rem;
+}
+
 .right {
     transform: rotate(180deg);
 }
@@ -32,5 +36,18 @@
     scroll-behavior: smooth;
     scroll-snap-type: x proximity;
     scrollbar-width: none; 
+}
 
+.artists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        border-radius: 50%;
+    }
+     span {
+        font-size: map.get(v.$font-size, subtitle);
+        color: v.$text-primary;
+     }
 }
