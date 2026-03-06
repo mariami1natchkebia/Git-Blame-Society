@@ -1,2 +1,73 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+@use "sass:map";
+
+
+
+
+// .mobile-menu {
+//   background-color: v.$bg-primary;
+//   color: v.$text-secondary;
+//   display: none;
+// //   display: grid;
+// //   grid-template-columns: repeat(5, 1fr);
+// //   justify-content: space-between;
+ 
+//   &__item {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     font-size: map.get(v.$font-size, paragraph);
+//     font-family: v.$font-base;
+//     color: v.$text-secondary;
+//     &.active {
+//       color: v.$nav-active-text;
+//     }
+//   }
+//   @include m.mobile {
+//     display: grid;
+//     grid-template-columns: repeat(5, 1fr);
+//     // justify-content: space-between;
+//     align-items: center;
+//     width: 100%;
+//     height: 95px;
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     z-index: 1000;
+//   }
+// }
+
+.sidebar {
+  background-color: v.$bg-primary;
+  color: v.$text-secondary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 259px;
+  height: 100vh;
+  &-menu{
+
+  }
+  @include m.mobile {
+    display: none;
+  }
+}
+
+
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   &-list {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//   }
+// }
+
+a {
+  text-decoration: none;
+  color: v.$text-secondary;
+  font-size: map.get(v.$font-size, paragraph);
+  font-family: v.$font-base;
+}

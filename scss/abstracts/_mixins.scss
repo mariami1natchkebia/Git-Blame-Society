@@ -23,6 +23,13 @@
       transition: 0.3s;
     }
 }
+// for mobile
+@mixin mobile {
+  @media (max-width: v.$bp-desktop) {
+    @content;
+  }
+}
+
 
 @mixin flex($justify: center, $align: center, $direction: row) {
   display: flex;
