@@ -1,8 +1,23 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
-@use "sass:map";
 
 .nav-bar-button {
-    @include btn;
+    @include m.filter-chip;
 }
 
+.icon-btn {
+    color:v.$text-secondary;
+    width: clamp(3.2rem, 2.6vw, 3.802rem);
+    height: clamp(3.2rem, 2.6vw, 3.802rem);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    @include m.flex();
+
+    &.icon-active {
+        background-color:v.$primary-accent;
+    }
+    :active{
+        color:v.$nav-active-button;
+    }
+}

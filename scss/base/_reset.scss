@@ -8,8 +8,14 @@
 
 a {
     text-decoration: none;
+    color:v.$text-primary;
 }
 
 li {
     list-style: none;
+}
+
+button{
+    border:none;
+    background-color: transparent;
 }
