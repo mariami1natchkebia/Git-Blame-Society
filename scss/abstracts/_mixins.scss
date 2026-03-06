@@ -7,21 +7,49 @@
   color: $color;
 }
 
-@mixin filter-chip {
-  background-color: rgba(v.$bg-secondary, 0.5);
-  color: v.$nav-active-text;
+@mixin nav-button {
+  background-color: rgba(v.$bg-main, 0.5);
+  color: v.$text-secondary;
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 0.8rem;
   font-size: 1.2rem;
   font-family: v.$font-base;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
   cursor: pointer;
+  width: 19.6rem;
     &:active {
-      background-color:v.$nav-active-button;
-      color: black;
+      background-color:v.$bg-primary;
+      color: v.$text-primary;
       font-weight: map.get(v.$font-weight,bold);
       transition: 0.3s;
     }
+}
+
+@mixin filter-chip {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  color: v.$text-secondary;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.8rem;
+  min-width: 19.6rem;
+  padding: 0.3rem 0 0.3rem 1.1rem;
+  gap: 0.9rem ;
+  cursor: pointer;
+      &:hover {
+          color: v.$text-primary;
+      }
+          &:active {
+              background-color:v.$bg-primary;
+              color: v.$text-primary;
+          }
+
 }
 
 @mixin flex($justify: center, $align: center, $direction: row) {
