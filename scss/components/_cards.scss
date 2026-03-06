@@ -23,6 +23,7 @@
 .title {
     font-size: map.get(v.$font-size, subtitle);
     font-weight: map.get(v.$font-weight, regular);
+    color:v.$text-primary;
 }
 
 .number {
@@ -33,7 +34,7 @@
 
 .album-cover {
     border-radius: 0.8rem;
-    z-index:3;
+    // z-index:3;
     position:relative;
     top:0.6rem;
 }
@@ -41,6 +42,11 @@
 .album-description {
     color:v.$text-secondary;
     font-size: 1.2rem;
+}
+
+.description {
+    margin-top: 1rem;
+    gap: 1rem;
 }
 
 .title-wrapper {
@@ -57,7 +63,7 @@
     border-top-left-radius: 0.725rem;
     border-top-right-radius: 0.725rem;
     background-color: rgba(#95E6D3, 0.3);
-    z-index: 2;
+    // z-index: 2;
     position: absolute;
     top: -0.1rem;
     left: 1rem;
