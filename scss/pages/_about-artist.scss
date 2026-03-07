@@ -1,0 +1,137 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+@use "sass:map";
+
+.about-artist{
+    h1, p {
+        color:v.$text-primary;
+    }
+    h1{
+        font-weight: map.get(v.$font-weight,black);
+        font-size: 5rem;
+    }
+    p{
+        font-weight: map.get(v.$font-weight,medium);
+        font-size: map.get(v.$font-size,subtitle);
+    }
+}
+
+.artist-hero {
+  position: relative;
+  height:42.5rem;
+  overflow: hidden;
+}
+
+.artist-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(7,7,7,0) 0%,
+    rgba(7,7,7,1) 100%
+  );
+}
+
+.artist-hero-content {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
+
+.artist-hero-content {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  right: 3rem;
+}
+
+.artist-meta-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artist-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+
+    .icon-btn{
+        width:4.041rem;
+        height:4.041rem;
+        @include m.flex();
+    }
+}
+
+.artist-navigation {
+    height:6rem;
+    font-weight: map.get(v.$font-weight,medium);
+    font-size: map.get(v.$font-size,subtitle);
+    padding:1rem 0;
+    background-color: v.$bg-main;
+    border-bottom: 1px solid rgba(137,137,137, 0.2);
+    
+    & nav {
+        @include m.flex($justify: flex-start);
+        gap:5rem;
+        padding-left:4.6rem;
+    }
+
+    li{
+        padding-bottom: 1rem;
+    }
+    .artist-menu {
+        @include m.flex();
+        gap: 5rem;
+        
+        }  
+    
+    .artist-active {
+        padding-bottom: 1rem;
+        border-bottom:2px solid v.$primary-accent;
+    }
+   
+    
+}
+
+.artist-content {
+  padding: 3.2rem 1.6rem 0;
+}
+
+.artist-content__main {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.top-tracks {
+  flex: 1;
+  min-width: 0;
+}
+
+.artist-pick {
+  width: 26rem;
+  flex-shrink: 0;
+}
+
+.track-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.track-item {
+  display: grid;
+  grid-template-columns: 2rem 4rem minmax(0, 1fr) 4rem 3rem;
+  align-items: center;
+  column-gap: 1.6rem;
+  padding: 1rem 0;
+}
