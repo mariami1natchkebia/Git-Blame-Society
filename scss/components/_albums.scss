@@ -1,0 +1,54 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+@use "sass:map";
+
+// styles for album sections
+
+.album-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: v.$text-primary;
+}
+
+.icons-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+       img {
+            padding: 1rem 0.7rem;
+        }
+}
+
+.album-wrapper {
+    margin-top: 3rem;
+}
+
+.right {
+    transform: rotate(180deg);
+}
+
+.albums-container {
+    display: flex;
+    gap: 1.1rem;
+    width: 144rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none; 
+}
+
+.artists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        border-radius: 50%;
+    }
+     span {
+        font-size: map.get(v.$font-size, subtitle);
+        color: v.$text-primary;
+     }
+}
+
