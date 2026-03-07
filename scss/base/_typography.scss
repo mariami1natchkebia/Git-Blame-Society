@@ -25,6 +25,7 @@ body, button {
 //card title (usually h3 inside a card)
 .card-title {
     font-size: map.get(v.$font-size, subtitle);
+    font-weight: map.get(v.$font-weight, medium);
 }
 
 //text under card title (use with p/span)
