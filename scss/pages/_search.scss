@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+
+.midnight-blue{
+    background-color: #1E3264;
+}
+
+.burnt-orange{
+    background-color: #BA5D07;
+}
+
+.medium-purple{
+    background-color: #8D67AB;
+}
+
+.pinkish-purple{
+    background-color: #B02897;
+}
+
+.gray{
+    background-color: #777777;
+}
+
+
+// @media (max-width: 1200px) {
+//   .album-container{
+//     grid-template-columns: 1fr 1fr; 
+//     grid-template-rows: repeat(4, 1fr); 
+//   }
+// }
