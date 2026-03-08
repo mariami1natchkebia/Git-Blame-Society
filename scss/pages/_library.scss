@@ -14,8 +14,18 @@
     z-index: 5;
 }
 
-    .artist-image-wrapper {
-        position: relative; // ახლა პინი ამ ჩარჩოს შიგნით დარჩება
-        width: 100%;
+.artist-image-wrapper {
+    position: relative; 
+    width: 100%;
 }
 
+.library-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.1rem;
+}
+
+.half {
+    width: 7.4rem;
+}

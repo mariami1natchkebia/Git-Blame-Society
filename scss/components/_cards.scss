@@ -10,7 +10,7 @@
     width: 17rem;
     color: v.$text-primary;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
     position: relative;
     row-gap: 0.9rem;  
@@ -431,6 +431,34 @@ label {
 
     .number {
         color: #DD138B;
+    }
+}
+
+.liked {
+    .background-shadow {
+        background-color: rgba(#1ED760, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#1ED760, 0.15);
+    }
+
+    .number {
+        color: #1ED760;
+    }
+}
+
+.disabled {
+    .background-shadow {
+        background-color: rgba(#3D3D3D, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#3D3D3D, 0.15);
+    }
+
+    .number {
+        color: v.$text-secondary;
     }
 }
 
