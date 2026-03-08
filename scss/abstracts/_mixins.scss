@@ -66,31 +66,47 @@
   flex-direction: $direction;
 }
 
-@mixin sidebar-menu($icon-size) {
+@mixin sidebar-menu($icon-size: 24px,) {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: v.$side-item-gap; 
+  padding: 8px 12px;
   text-decoration: none;
-  height: v.$side-item-height;
-  gap: v.$side-item-gap;
-  padding: 15px;
-  width: 100%;  
-  
-  img:first-child {
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  color: v.$text-secondary;
+  width: 100%;
+
+  img:first-of-type {
     width: $icon-size;
     height: $icon-size;
+    flex-shrink: 0;
   }
 
   span {
-    font-size: map.get(v.$font-size, paragraph);
-    font-weight: map.get(v.$font-weight, medium);
-    color: v.$text-secondary;
+    font-size: 1.4rem;
+    font-weight: 500;
     flex-grow: 1;
-    line-height: 1;
+    white-space: nowrap; 
   }
 
-  img:last-child:not(:first-child) {
+  
+  img:last-of-type:not(:first-of-type) {
     width: 16px;
     height: 16px;
-    
+    opacity: 0.7;
+  }
+    &:hover {
+      color: v.$text-primary;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    &.active {
+      background-color: v.$bg-secondary;
+      color: v.$text-primary;
+      
+      img:first-of-type {
+        filter: brightness(0) invert(1); 
+      }
+    }
   } 
-}
