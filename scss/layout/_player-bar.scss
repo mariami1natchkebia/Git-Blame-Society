@@ -6,8 +6,9 @@
     background-color: v.$player-bg;
     border-radius: 1rem;
     position:fixed;
+    width: 100%;
     bottom: 0;
-    left: calc(clamp(20rem, 20vw, 25.9rem) + 0.7rem);
+    left: 25.9rem;
     right: 0.7rem;
     padding:1.2rem 1.83rem 1.2rem 2.1rem;
     @include m.flex($justify:space-between);

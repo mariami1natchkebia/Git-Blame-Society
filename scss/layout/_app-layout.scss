@@ -9,7 +9,7 @@
     padding:0.3rem 0.7rem 0;
 }
 
-main, .player-bar {
+main {
     flex: 1;
     padding-inline:0.7rem;
 }
@@ -33,7 +33,7 @@ footer {
 }
 
 aside{
-    width: clamp(20rem, 20vw, 25.9rem);
+    width:25.9rem;
     @media (max-width:v.$bp-desktop){
         display: none;
     }
