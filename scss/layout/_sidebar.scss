@@ -49,6 +49,13 @@
   @include m.mobile {
     display: none;
   }
+  a {
+  text-decoration: none;
+  color: v.$text-secondary;
+  font-size: map.get(v.$font-size, paragraph);
+  font-family: v.$font-base;
+}
+
 }
 
 
@@ -62,9 +69,3 @@
 //   }
 // }
 
-a {
-  text-decoration: none;
-  color: v.$text-secondary;
-  font-size: map.get(v.$font-size, paragraph);
-  font-family: v.$font-base;
-}
