@@ -4,9 +4,6 @@
 
 /* Album Components */
 
-
-
-
 // Reccomendation-Cards styles
 
 .recommendation-card {
@@ -21,21 +18,12 @@
     cursor: pointer;    
 }
 
-.title {
-    font-size: map.get(v.$font-size, subtitle);
-    font-weight: map.get(v.$font-weight, regular);
-    color:v.$text-primary;
-}
-
 .number {
-    color: (#CE6E9A);
-    font-size: map.get(v.$font-size, subtitle);
-    font-weight: map.get(v.$font-weight, regular);
+    @include m.card-rank;
 }
 
 .album-cover {
     border-radius: 0.8rem;
-    // z-index:3;
     position:relative;
     top:0.6rem;
 }
@@ -53,18 +41,14 @@
 .title-wrapper {
     display: flex;
     justify-content: space-between;
-    row-gap: 0.9rem;
+    margin-bottom: 0.8rem;
 }
-
-
 
 .background-shadow {
     width: 15.4rem;
     height: 0.6rem;
     border-top-left-radius: 0.725rem;
     border-top-right-radius: 0.725rem;
-    background-color: rgba(#95E6D3, 0.3);
-    // z-index: 2;
     position: absolute;
     top: -0.1rem;
     left: 1rem;
@@ -75,7 +59,6 @@
     height: 0.3rem;
     border-top-left-radius: 0.725rem;
     border-top-right-radius: 0.725rem;
-    background-color: rgba(#95E6D3, 0.15);
     z-index: 1;
     position: absolute;
     top: -0.5rem;
@@ -112,3 +95,315 @@
     right: -1.5rem;
     bottom: -1.5rem;
 }   
+
+.description-box {
+    margin-top: 1rem;
+    gap: 0.8rem;
+    padding:1rem 0 1rem 1.2rem; 
+    border-radius: 0.5rem;
+    .card-title {
+        font-size:1.585rem;
+        font-weight: map.get(v.$font-weight,regular);
+    }
+    .album-description {
+        font-size: 1.321rem;
+    }
+}
+
+//card background colors
+.pink {
+    .background-shadow {
+        background-color: rgba(#CE6E9A, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#CE6E9A, 0.15);
+    }
+
+    .number {
+        color: #CE6E9A;
+    }
+}
+
+.mint {
+    .background-shadow {
+        background-color: rgba(#95E6D3, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#95E6D3, 0.15);
+    }
+
+    .number {
+        color: #95E6D3;
+    }
+}
+
+.light-pink {
+    .background-shadow {
+        background-color: rgba(#F4B8BD, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#F4B8BD, 0.15);
+    }
+
+    .number {
+        color: #F4B8BD;
+    }
+}
+
+.light-green {
+    .background-shadow {
+        background-color: rgba(#C3E7B7, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#C3E7B7, 0.15);
+    }
+
+    .number {
+        color: #C3E7B7;
+    }
+}
+
+.bright-pink {
+    .background-shadow {
+        background-color: rgba(#F37FA6, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#F37FA6, 0.15);
+    }
+
+    .number {
+        color: #F37FA6;
+    }
+}
+
+.blue-gray {
+    .background-shadow {
+        background-color: rgba(#A0BEC8, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#A0BEC8, 0.15);
+    }
+
+    .number {
+        color: #A0BEC8;
+    }
+}
+
+.light-yellow {
+    .background-shadow {
+        background-color: rgba(#FDD87D, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#FDD87D, 0.15);
+    }
+
+    .number {
+        color: #FDD87D;
+    }
+}
+
+.rose {
+    .background-shadow {
+        background-color: rgba(#D4B2A9, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#D4B2A9, 0.15);
+    }
+
+    .number {
+        color: #D4B2A9;
+    }
+}
+
+
+.warm-beige {
+    .background-shadow {
+        background-color: rgba(#DEB075, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#DEB075, 0.15);
+    }
+
+    .number {
+        color: #DEB075;
+    }
+}
+
+
+.teal {
+    .background-shadow {
+        background-color: rgba(#8DC3B5, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#8DC3B5, 0.15);
+    }
+
+    .number {
+        color: #8DC3B5;
+    }
+}
+
+.soft-blue {
+    .background-shadow {
+        background-color: rgba(#A6BAD3, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#A6BAD3, 0.15);
+    }
+
+    .number {
+        color: #A6BAD3;
+    }
+}
+
+.pastel-green {
+    .background-shadow {
+        background-color: rgba(#C3E7B7, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#C3E7B7, 0.15);
+    }
+
+    .number {
+        color: #C3E7B7;
+    }
+}
+
+.lime {
+    .background-shadow {
+        background-color: rgba(#CCF665, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#CCF665, 0.15);
+    }
+
+    .number {
+        color: #CCF665;
+    }
+}
+
+.lemon {
+    .background-shadow {
+        background-color: rgba(#F9E72C, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#F9E72C, 0.15);
+    }
+
+    .number {
+        color: #F9E72C;
+    }
+}
+
+.aqua {
+    .background-shadow {
+        background-color: rgba(#9BF0E2, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#9BF0E2, 0.15);
+    }
+
+    .number {
+        color: #9BF0E2;
+    }
+}
+
+.electric-blue {
+    .background-shadow {
+        background-color: rgba(#6F86FF, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#6F86FF, 0.15);
+    }
+
+    .number {
+        color: #6F86FF;
+    }
+}
+
+.blush {
+    .background-shadow {
+        background-color: rgba(#FFCBD4, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#FFCBD4, 0.15);
+    }
+
+    .number {
+        color: #FFCBD4;
+    }
+}
+
+.amber-yellow {
+    .background-shadow {
+        background-color: rgba(#FFC668, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#FFC668, 0.15);
+    }
+
+    .number {
+        color: #FFC668;
+    }
+}
+
+.deep-teal {
+    .background-shadow {
+        background-color: rgba(#27856B, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#27856B, 0.15);
+    }
+
+    .number {
+        color: #27856B;
+    }
+}
+
+.magenta {
+    .background-shadow {
+        background-color: rgba(#DD138B, 0.3);
+    }
+
+    .background-shadow2 {
+        background-color: rgba(#DD138B, 0.15);
+    }
+
+    .number {
+        color: #DD138B;
+    }
+}
+
+.description-box.green {
+    background-color: rgba(#85C585, 0.05);
+    border-left: 0.4rem solid rgba(#85C585, 0.6);
+}
+
+.description-box.peach {
+    background-color: rgba(#F1CEBC, 0.05);
+    border-left: 0.4rem solid rgba(#F1CEBC, 0.6);
+}
+
+.description-box.orange {
+    background-color: rgba(#F67D4D, 0.05);
+    border-left: 0.4rem solid rgba(#F67D4D, 0.6);
+}

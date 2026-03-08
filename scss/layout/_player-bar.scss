@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+@use "sass:map";
 
 .player-bar{
     background-color: v.$player-bg;
@@ -39,6 +40,10 @@
 
 .player-center{
     gap:1rem;
+
+    .card-title{
+        font-weight:map.get(v.$font-weight, regular);
+    }
 }
 
 .divider-line{
