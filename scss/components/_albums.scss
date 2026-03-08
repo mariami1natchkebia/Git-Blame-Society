@@ -45,7 +45,11 @@
     justify-content: center;
     align-items: center;
     img {
-        border-radius: 50%;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%; // არტისტებისთვის წრიული
+        object-fit: cover;
+        position: relative;
     }
      span {
         font-size: map.get(v.$font-size, subtitle);
