@@ -2,6 +2,25 @@
 @use "../abstracts/mixins" as m;
 
 
+.recent-searches, .browse, .genre, .mood-activity, .entertaiment, .podcast-section, .audiobooks {
+    margin-top: 3rem;
+}
+
+.search {
+    @include m.nav-button;
+}
+
+
+
+.album-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    justify-content: flex-start;
+    gap: 1.1rem;
+    margin-top: 2rem;
+}
+
+
 .midnight-blue{
     background-color: #1E3264;
 }
@@ -22,10 +41,67 @@
     background-color: #777777;
 }
 
+.forest-green{
+    background-color:#148A08 ;
+}
 
-// @media (max-width: 1200px) {
-//   .album-container{
-//     grid-template-columns: 1fr 1fr; 
-//     grid-template-rows: repeat(4, 1fr); 
-//   }
-// }
+.dark-orange{
+    background-color: #D84000;
+}
+
+.dark-eggplant{
+    background-color:#503750 ;
+}
+
+.medium-teal{
+    background-color: #006450;
+}
+
+.bright-red{
+    background-color:#E91429 ;
+}
+
+.steel-blue{
+    background-color:#537AA1 ;
+}
+
+.royal-blue {
+    background-color: #2D46B9;
+}
+
+.deep-pink {
+    background-color: #E1118C;
+}
+
+.dark-red {
+    background-color: #EB1E32;
+}
+
+.pinky {
+    background-color: #E41D63;
+}
+
+.regular-blue {
+    background-color: #0D73EC;
+}
+
+.medium-pink {
+    background-color: #E8115B;
+}
+
+.green {
+    background-color:#27856A ;
+}
+
+.new-red {
+    background-color:#E61E32 ;
+}
+
+
+  @media (max-width: v.$bp-desktop) {
+    .icons-heading {
+        display: none;
+    }
+
+
+  }
