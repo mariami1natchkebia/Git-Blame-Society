@@ -227,172 +227,448 @@
                 <span>Audiobooks</span>
             </button>
             </div>
-            <div class="drop-down-menu">
-                <a href="#"> <img src="./assets/filter chip.svg" id="filter" alt="filter-icon"></a>
+
+            <!-- filter-menu with checkbox -->
+
+        <input type="checkbox" id="filter-menu">
+        <label for="filter-menu"><img src="./assets/filter chip.svg" alt=""></label>
+        <div class="customize-feed">
+                <div class="customize-title">
+                    <h4>Customize Feed</h4>
                 </div>
+                <div class="select">
+                    <a href=""><img src="./assets/add.svg" alt="add"></a>
+                    <span>Select from Library</span>
+                </div>
+                <div class="customize" >
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <span>New Releases</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <span>Made For You</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button> 
+                        <span>Recently Played</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <span>Your Playlists</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="add"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <span>Spotify Original Podcasts</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button> 
+                        <span>Your Favorite Artists</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <span>Recomended Radio</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <span>Audiobooks For You</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                            <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="#898989" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <span>Your Top Mixes</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <span>Episodes For You</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="customize">
+                    <div class="selection">
+                        <button class="icon-btn icon-interactive">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                        </button>
+                        <span>Albums For You</span>
+                    </div>
+                    <div class="selection-action">
+                        <a href=""><img src="./assets/menu-icon.svg" alt="menu"></a>
+                        <button class="icon-toggle" onclick="this.classList.toggle('active')">
+                        <svg width="26" height="26" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g class="eye-open">
+                            <path d="M12.4696 4.63839C16.8556 4.66839 20.4354 7.78756 22.5127 10.1376C23.8213 11.6179 23.7993 13.7758 22.4383 15.208C20.3767 17.3774 16.8851 20.1655 12.5756 20.1361C8.24446 20.1064 4.70061 17.2419 2.61321 15.0396C1.25489 13.6065 1.21896 11.4508 2.5267 9.97139C4.57595 7.65315 8.10214 4.60853 12.4696 4.63839Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12.5472" cy="12.3518" r="4.25215" fill="currentColor"/>
+                            </g>
+
+                            <path class="eye-closed" d="M14.4976 18.751C12.5341 18.7376 10.7386 18.1192 9.17831 17.2471M14.4976 18.751V21.8327M14.4976 18.751C16.5165 18.7648 18.349 18.1365 19.9273 17.2471M25.9621 11.5927C25.9621 11.5927 25.3169 12.5861 24.1582 13.8327M2.93416 11.4353C2.93416 11.4353 3.63964 12.5084 4.89332 13.8327M4.89332 13.8327L2.17831 16.5477M4.89332 13.8327C5.95824 14.9576 7.41871 16.2637 9.17831 17.2471M9.17831 17.2471L7.17831 20.3327M19.9273 17.2471L21.6783 20.3327M19.9273 17.2471C21.6836 16.2574 23.125 14.9444 24.1582 13.8327M24.1582 13.8327L26.6783 16.3528" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </nav>
 
     <!-- Albums Section -->
 
     <section class="album-lists">
-        <div class="album-wrapper">
-                <div class="album-heading">
-                    <h2 class="section-title"> Made For You</h2>
-                    <div class="icons-heading">
-                        <a href="#start"><img src="./assets/arrow-icon.svg" class="scroll" alt="arrow-left"></a>
-                        <a href="#end"><img src="./assets/arrow-icon.svg" class="right scroll" alt="arrow-right"></a>
-                        <a href="#"><img src="./assets/more-icon.svg" id="more" alt="more"></a>
+            <div class="album-heading">
+                <h2 class="section-title"> Made For You</h2>
+                <div class="icons-heading">
+                    <a href="#start"><img src="./assets/arrow-icon.svg" class="scroll" alt="arrow-left"></a>
+                    <a href="#end"><img src="./assets/arrow-icon.svg" class="right scroll" alt="arrow-right"></a>
+                    <input type="checkbox" id="more">
+                    <label for="more"><img src="./assets/more-icon.svg" alt="more"></label>
+                    <div class="more-menu">
+                        <div class="more-item">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                            <span>Pin to Home</span>
+                        </div>
+                        <div class="more-item">
+                            <a href=""><img src="./assets/hide-icon.svg" alt="hide"></a>
+                            <span>Hide this section</span>
+                        </div>
                     </div>
-                </div>
-            <div class="albums-container">
-                <figure class="recommendation-card pink" id="start">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/discover-weekly.svg" class="album-cover" alt="discover-weekly">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Discover Weekly</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">Your weekly mixtape of fresh music.</p>
-                        </figcaption>
-                </figure>
-
-                <figure class="recommendation-card mint" id="start">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/dailymix1.svg" class="album-cover" alt="dailymix1">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Daily Mix 1</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">Linkin Park, System Of A Down, Coal Chamber...</p>
-                        </figcaption>
-                </figure>
-
-                <figure class="recommendation-card light-pink">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/dailymix2.svg" class="album-cover" alt="dailymix2">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Daily Mix 2</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">Avril Lavigne, Lorde, Charli XCX and more</p>
-                        </figcaption>
-                </figure>
-                <figure class="recommendation-card light-green">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/dailymix3.svg" class="album-cover" alt="dailymix3">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Daily Mix 3</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">The Strokes, Martin Garrix, MGMT and more</p>
-                        </figcaption>
-                </figure>
-                <figure class="recommendation-card bright-pink">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/dailymix4.svg" class="album-cover" alt="dailymix4">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Daily Mix 4</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">Chuck Berry, Elvis Presley, Roy Orbison and more</p>
-                        </figcaption>
-                </figure>
-                <figure class="recommendation-card blue-gray">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/dailymix5.svg" class="album-cover" alt="dailymix5">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Daily Mix 5</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">Frank Sinatra, Gerhard Trede, Dean Martin and more</p>
-                        </figcaption>
-                </figure>
-                <figure class="recommendation-card light-yellow">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/nirvana-radio.svg" class="album-cover" alt="nirvana-radio">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Nirvana Radio</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">The Strokes, Martin Garrix, MGMT and more</p>
-                        </figcaption>
-                </figure>
-                <figure class="recommendation-card rose">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/falloutboy-radio.svg" class="album-cover" alt="falloutboy-radio">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Fall Out Boy Radio</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">With Panic! At The Disco, The All-American Rejects,...</p>
-                        </figcaption>
-                </figure>
-                <figure class="recommendation-card warm-beige">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/adele-radio.svg" class="album-cover" alt="adele-radio">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Adele Radio</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">With Sia, Sam Smith, P!nk and more</p>
-                        </figcaption>
-                </figure>
-                <figure class="recommendation-card teal">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/daftpunk-radio.svg" class="album-cover" alt="daftpunk-radio">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Daft Punk Radio</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">With Justice, The Chemical Brothers, ...</p>
-                        </figcaption>
-                </figure>
-                <figure class="recommendation-card soft-blue">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/abba-radio.svg" class="album-cover" alt="abba-radio">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">ABBA Radio</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">With Honey M., Bee Gees, Bonnie Tyler, and more</p>
-                        </figcaption>
-                </figure>
-                <figure class="recommendation-card pastel-green" id="end">
-                    <div class="background-shadow2"></div>
-                    <div class="background-shadow"></div>
-                    <img src="./assets/album-pictures/dailymix6.svg" class="album-cover" alt="dailymix6">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Daily Mix 6</span>
-                                <span class="number">50</span>
-                            </div>
-                            <p class="album-description">One Direction, Avril Lavigne, Lorde, and more</p>
-                        </figcaption>
-                </figure>
             </div>
-        </section>
+            </div>
+        <div class="albums-container">
+            <figure class="recommendation-card pink" id="start">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/discover-weekly.svg" class="album-cover" alt="discover-weekly">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Discover Weekly</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">Your weekly mixtape of fresh music.</p>
+                    </figcaption>
+            </figure>
+
+            <figure class="recommendation-card mint" id="start">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/dailymix1.svg" class="album-cover" alt="dailymix1">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Daily Mix 1</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">Linkin Park, System Of A Down, Coal Chamber...</p>
+                    </figcaption>
+            </figure>
+
+            <figure class="recommendation-card light-pink">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/dailymix2.svg" class="album-cover" alt="dailymix2">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Daily Mix 2</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">Avril Lavigne, Lorde, Charli XCX and more</p>
+                    </figcaption>
+            </figure>
+            <figure class="recommendation-card light-green">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/dailymix3.svg" class="album-cover" alt="dailymix3">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Daily Mix 3</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">The Strokes, Martin Garrix, MGMT and more</p>
+                    </figcaption>
+            </figure>
+            <figure class="recommendation-card bright-pink">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/dailymix4.svg" class="album-cover" alt="dailymix4">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Daily Mix 4</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">Chuck Berry, Elvis Presley, Roy Orbison and more</p>
+                    </figcaption>
+            </figure>
+            <figure class="recommendation-card blue-gray">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/dailymix5.svg" class="album-cover" alt="dailymix5">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Daily Mix 5</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">Frank Sinatra, Gerhard Trede, Dean Martin and more</p>
+                    </figcaption>
+            </figure>
+            <figure class="recommendation-card light-yellow">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/nirvana-radio.svg" class="album-cover" alt="nirvana-radio">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Nirvana Radio</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">The Strokes, Martin Garrix, MGMT and more</p>
+                    </figcaption>
+            </figure>
+            <figure class="recommendation-card rose">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/falloutboy-radio.svg" class="album-cover" alt="falloutboy-radio">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Fall Out Boy Radio</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">With Panic! At The Disco, The All-American Rejects,...</p>
+                    </figcaption>
+            </figure>
+            <figure class="recommendation-card warm-beige">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/adele-radio.svg" class="album-cover" alt="adele-radio">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Adele Radio</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">With Sia, Sam Smith, P!nk and more</p>
+                    </figcaption>
+            </figure>
+            <figure class="recommendation-card teal">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/daftpunk-radio.svg" class="album-cover" alt="daftpunk-radio">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Daft Punk Radio</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">With Justice, The Chemical Brothers, ...</p>
+                    </figcaption>
+            </figure>
+            <figure class="recommendation-card soft-blue">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/abba-radio.svg" class="album-cover" alt="abba-radio">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">ABBA Radio</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">With Honey M., Bee Gees, Bonnie Tyler, and more</p>
+                    </figcaption>
+            </figure>
+            <figure class="recommendation-card pastel-green" id="end">
+                <div class="background-shadow2"></div>
+                <div class="background-shadow"></div>
+                <img src="./assets/album-pictures/dailymix6.svg" class="album-cover" alt="dailymix6">
+                    <figcaption class="description">
+                        <div class="title-wrapper">
+                            <span class="card-title">Daily Mix 6</span>
+                            <span class="number">50</span>
+                        </div>
+                        <p class="album-description">One Direction, Avril Lavigne, Lorde, and more</p>
+                    </figcaption>
+            </figure>
+        </div>
+    </section>
 
     <!-- Your Top Mixes -->
 
@@ -402,7 +678,20 @@
             <div class="icons-heading">
                 <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
                 <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                <a href="#"><img src="./assets/more-icon.svg" id="more" alt="more"></a>
+                <input type="checkbox" id="more-made">
+                <label for="more-made"><img src="./assets/more-icon.svg" alt="more"></label>
+                <div class="more-menu">
+                    <div class="more-item">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                        <span>Pin to Home</span>
+                    </div>
+                    <div class="more-item">
+                        <a href=""><img src="./assets/hide-icon.svg" alt="hide"></a>
+                        <span>Hide this section</span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="albums-container">       
@@ -513,7 +802,20 @@
                     <div class="icons-heading">
                         <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
                         <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                        <a href="#"><img src="./assets/more-icon.svg" id="more" alt="more"></a>
+                        <input type="checkbox" id="more-artists">
+                        <label for="more-artists"><img src="./assets/more-icon.svg" alt="more"></label>
+                        <div class="more-menu">
+                            <div class="more-item">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                                <span>Pin to Home</span>
+                            </div>
+                            <div class="more-item">
+                                <a href=""><img src="./assets/hide-icon.svg" alt="hide"></a>
+                                <span>Hide this section</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             <div class="albums-container">
@@ -535,6 +837,7 @@
                         <span class="card-title">Guns N' Roses</span>
                     </figcaption>
                 </figure>
+            </div> 
             </section>
 
 
@@ -546,7 +849,20 @@
                         <div class="icons-heading">
                             <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
                             <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                            <a href="#"><img src="./assets/more-icon.svg" id="more" alt="more"></a>
+                            <input type="checkbox" id="more-foryou">
+                            <label for="more-foryou"><img src="./assets/more-icon.svg" alt="more"></label>
+                            <div class="more-menu">
+                                <div class="more-item">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                    <span>Pin to Home</span>
+                                </div>
+                                <div class="more-item">
+                                    <a href=""><img src="./assets/hide-icon.svg" alt="hide"></a>
+                                    <span>Hide this section</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
             <div class="albums-container">
@@ -605,7 +921,20 @@
                         <div class="icons-heading">
                             <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
                             <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                            <a href="#"><img src="./assets/more-icon.svg" id="more" alt="more"></a>
+                            <input type="checkbox" id="more-audiobooks">
+                            <label for="more-audiobooks"><img src="./assets/more-icon.svg" alt="more"></label>
+                            <div class="more-menu">
+                                <div class="more-item">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                    <span>Pin to Home</span>
+                                </div>
+                                <div class="more-item">
+                                    <a href=""><img src="./assets/hide-icon.svg" alt="hide"></a>
+                                    <span>Hide this section</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
             <div class="albums-container">
@@ -641,7 +970,20 @@
                         <div class="icons-heading">
                             <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
                             <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                            <a href="#"><img src="./assets/more-icon.svg" id="more" alt="more"></a>
+                            <input type="checkbox" id="more-podcasts">
+                            <label for="more-podcasts"><img src="./assets/more-icon.svg" alt="more"></label>
+                            <div class="more-menu">
+                                <div class="more-item">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                    <span>Pin to Home</span>
+                                </div>
+                                <div class="more-item">
+                                    <a href=""><img src="./assets/hide-icon.svg" alt="hide"></a>
+                                    <span>Hide this section</span>
+                                </div>
+                            </div>
                         </div>
             </div>   
             <div class="albums-container">
@@ -677,7 +1019,20 @@
                         <div class="icons-heading">
                             <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
                             <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                            <a href="#"><img src="./assets/more-icon.svg" id="more" alt="more"></a>
+                            <input type="checkbox" id="more-episodes">
+                            <label for="more-episodes"><img src="./assets/more-icon.svg" alt="more"></label>
+                            <div class="more-menu">
+                                <div class="more-item">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.6064 2.51756L11.0886 0.99972M12.6064 2.51756L5.90602 9.21795C5.78291 9.34106 5.62211 9.41937 5.44928 9.44038L2.69598 9.77507C2.05138 9.85343 1.78008 10.6398 2.23924 11.099L6.16779 15.0275M12.6064 2.51756L18.6778 8.58889M20.1956 10.1067L18.6778 8.58889M18.6778 8.58889L11.9774 15.2893C11.8543 15.4124 11.7759 15.5732 11.7549 15.746L11.4202 18.4993C11.3419 19.1439 10.5555 19.4152 10.0963 18.9561L6.16779 15.0275M6.16779 15.0275L0.999994 20.1953" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                                    <span>Pin to Home</span>
+                                </div>
+                                <div class="more-item">
+                                    <a href=""><img src="./assets/hide-icon.svg" alt="hide"></a>
+                                    <span>Hide this section</span>
+                                </div>
+                            </div>
                         </div>
             </div>   
             <div class="albums-container">
