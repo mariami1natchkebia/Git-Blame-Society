@@ -1,52 +1,62 @@
-@use "../abstracts/variables" as v;
-@use "../abstracts/mixins" as m;
+    @use "../abstracts/variables" as v;
+    @use "../abstracts/mixins" as m;
+    @use "sass:map";
 
-.player-bar{
-    background-color: v.$player-bg;
-    border-radius: 1rem;
-    position:fixed;
-    bottom: 0;
-    left:calc(25.9rem + 0.7rem);
-    right: 0.7rem;
-    padding:1.2rem 1.83rem 1.2rem 2.1rem;
-    @include m.flex($justify:space-between);
+    .player-bar{
+        position: fixed;
+        bottom: 0;
+        left: calc(#{v.$sidebar-width} + 1.4rem);
+        right:1.4rem;
+        width: auto;
+        background-color: v.$player-bg;
+        border-radius: 1rem;
+        padding: 1.2rem 1.83rem 1.2rem 2.1rem;
+        @include m.flex($justify:space-between);
+        @media(max-width:v.$bp-desktop){
+            display: none;
+        }
 }
 
-.player-left, .player-center, .timeline, .player-right{
-    @include m.flex();
-}
 
-.player-left {
-    gap:0.5rem;
-}
-
-.timeline {
-    padding: 0.4rem 0;
-    gap:0.9rem;
-}
-.progress{
-    width:clamp(16rem, 17.9vw, 31.7rem);
-    border-radius: 0.5rem;
-    height:0.3rem;
-    background-color:rgba(137, 137, 137, 0.27);
-    .progress-fill {
-        background-color:#D9D9D9;
-        height:100%;
-        width:45%;
-        border-radius: 0.5rem;
+    .player-left, .player-center, .timeline, .player-right{
+        @include m.flex();
     }
-}
 
-.player-center{
-    gap:1rem;
-}
+    .player-left {
+        gap:0.5rem;
+    }
 
-.divider-line{
-    height:3.6rem;
-    border:0.2rem solid rgba(137, 137, 137, 0.3);
-}
+    .timeline {
+        padding: 0.4rem 0;
+        gap:0.9rem;
+    }
+    .progress{
+        width:clamp(16rem, 17.9vw, 31.7rem);
+        border-radius: 0.5rem;
+        height:0.3rem;
+        background-color:rgba(137, 137, 137, 0.27);
+        .progress-fill {
+            background-color:#D9D9D9;
+            height:100%;
+            width:45%;
+            border-radius: 0.5rem;
+        }
+    }
 
-.player-right {
-    gap:0.631rem;  
-}
+    .player-center{
+        gap:1rem;
+
+        .card-title{
+            font-weight:map.get(v.$font-weight, regular);
+        }
+    }
+
+    .divider-line{
+        height:3.6rem;
+        border:0.2rem solid rgba(137, 137, 137, 0.3);
+    }
+
+    .player-right {
+        gap:0.631rem;  
+    }
 

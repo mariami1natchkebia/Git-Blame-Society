@@ -7,6 +7,9 @@
   color: $color;
 }
 
+
+// navigation button
+
 @mixin nav-button {
   background-color: rgba(v.$bg-main, 0.5);
   color: v.$text-secondary;
@@ -34,6 +37,7 @@
   }
 }
 
+// filter chip
 
 @mixin filter-chip {
   background-color: transparent;
@@ -42,7 +46,7 @@
   flex-direction: row;
   align-items: center;
   color: v.$text-secondary;
-  font-size: 1.4rem;
+  font-size: map.get(v.$font-size, subtitle);
   border: none;
   border-radius: 0.8rem;
   padding: 0.8rem 1.5rem;
