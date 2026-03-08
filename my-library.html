@@ -239,14 +239,39 @@
                                 <span>Recent</span>
                         </button>
                         
-                        <button class="library-btn">
-                            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 1L1 1" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M15.4922 7L5.49219 7" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M12.4922 13H8.49219" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
+                        <div class="library-filter-container">
+                            <input type="checkbox" id="group-checkbox">
+                            <label for="group-checkbox" class="library-btn">
+                                <svg width="20" height="14" viewBox="0 0 20 14" fill="none">
+                                    <path d="M19 1L1 1" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M15.4922 7L5.49219 7" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M12.4922 13H8.49219" stroke="#898989" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
                                 <span>Group</span>
-                        </button>
+                            </label>
+
+                            <div class="group-menu">
+                                <ul class="menu-items">
+                                    <li><a href="#">All</a></li>
+                                    <li><a href="#">Songs</a></li>
+                                    <li><a href="#">Playlists</a></li>
+                                    <li><a href="#">Albums</a></li>
+                                    <li><a href="#">Artists</a></li>
+                                    <li><a href="#">Folders</a></li>
+                                    <li><a href="#">Podcasts</a></li>
+                                    <li><a href="#">Audiobooks</a></li>
+                                </ul>
+
+                                <div class="group-switch">
+                                    <span>Group</span>
+                                    <label class="switch">
+                                        <input type="checkbox" id="switch">
+                                        <span class="switch-button"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
 
                         <button class="library-btn">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
