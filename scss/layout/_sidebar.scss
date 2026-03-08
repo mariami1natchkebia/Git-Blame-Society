@@ -44,11 +44,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 259px;
   height: 100vh;
-  &-menu{
 
-  }
   @include m.mobile {
     display: none;
   }
