@@ -5,10 +5,11 @@
     min-height: 100vh;
     background-color: v.$bg-main;
     display: flex;
+    gap:0.7rem;
     padding:0.3rem 0.7rem 0;
 }
 
-main {
+main, .player-bar {
     flex: 1;
     padding-inline:0.7rem;
 }
