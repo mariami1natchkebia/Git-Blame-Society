@@ -44,12 +44,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: transform (0.3s);
     img {
-        border-radius: 50%;
+        width: 100%;
+        border-radius: 50%; 
+        position: relative;
     }
-     span {
-        font-size: map.get(v.$font-size, subtitle);
-        color: v.$text-primary;
-     }
-}
+        span {
+            font-size: map.get(v.$font-size, subtitle);
+            color: v.$text-primary;
+        }
+            &:hover {
+                transform: scale(1.1);
+            }
 
+}

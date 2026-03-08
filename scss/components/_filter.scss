@@ -2,6 +2,9 @@
 @use "../abstracts/variables" as v;
 
 
+
+// Home Filter
+
 .filter-section {
     display: flex;
     justify-content: space-between;
@@ -18,6 +21,8 @@
 display: flex;
 gap: 1rem;
 }
+
+// Filter checkbox menu
 
 #filter-menu {
     display: none;
@@ -121,4 +126,39 @@ svg:active {
 
 .icon-toggle.active .eye-closed {
     display: block;
+}
+
+
+
+// My Library Filter
+
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 1.1rem 0 1.6rem 0 ;
+}
+
+.list-style {
+    display: flex;
+    gap: 1rem;
+}
+
+.left-filter {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.by {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.library-btn {
+    @include m.filter-chip;
+    &:active {
+        background-color: v.$text-secondary;
+    }
 }
