@@ -2,10 +2,22 @@
 @use "../abstracts/mixins" as m;
 
 
+.recent-searches, .browse, .genre, .mood-activity, .entertaiment, .podcast-section, .audiobooks {
+    margin-top: 3rem;
+}
+
+.search {
+    @include m.nav-button;
+}
+
+
+
 .album-container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    justify-content: flex-start;
     gap: 1.1rem;
+    margin-top: 2rem;
 }
 
 
@@ -41,7 +53,7 @@
     background-color:#503750 ;
 }
 
-.deep-teal{
+.medium-teal{
     background-color: #006450;
 }
 
@@ -65,7 +77,7 @@
     background-color: #EB1E32;
 }
 
-.light-pink {
+.pinky {
     background-color: #E41D63;
 }
 
@@ -77,7 +89,7 @@
     background-color: #E8115B;
 }
 
-.light-green {
+.green {
     background-color:#27856A ;
 }
 
@@ -87,12 +99,6 @@
 
 
   @media (max-width: v.$bp-desktop) {
-    .album-container {
-        display: grid;
-        grid-template-columns: repeat(4, 20rem);
-        row-gap: 2rem;
-        justify-content: center;
-   }
     .icons-heading {
         display: none;
     }
