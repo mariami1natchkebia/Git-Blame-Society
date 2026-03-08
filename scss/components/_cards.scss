@@ -108,9 +108,9 @@ label {
 
 .genre-album {
     display: flex;
-    padding-left: 2rem;
+    padding-left: 1.2rem;
     width: 17rem;
-    height: 17rem;
+    height: clamp(17rem, 15vh, 14rem);;
     color: v.$text-secondary;
     background-color: #1E3264;
     border-radius: 1rem;
@@ -122,16 +122,19 @@ label {
             color: v.$nav-active-text;
             font-size: map.get(v.$font-size, heading);
             font-weight: map.get(v.$font-weight, bold);  
-            width: 9rem;         
+            width: 9rem; 
+            z-index: 2;        
         }
    }
  
 .album-image {
+    // position: sticky;
     position: absolute;
     z-index: 1;
     transform: rotate(30deg);
     right: -1.5rem;
     bottom: -1.5rem;
+    object-fit: cover;
 }   
 
 .description-box {
