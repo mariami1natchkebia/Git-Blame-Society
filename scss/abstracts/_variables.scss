@@ -35,10 +35,16 @@ $font-weight: (
 $bp-desktop: 1200px;
 
 // icons size
-$side-item-height: 40px;    
-$side-item-gap: 12px;       
-$side-icon-main: 24px;      
-$side-icon-sub: 20px;       
-$side-library-margin: 7px;
+$side-item-height: 4rem;    
+$side-item-gap: 1.2rem;       
+$side-icon-main: 2.4rem;      
+$side-icon-sub: 2rem;       
+$side-library-margin: 0.7rem;
 // LIBRARY
 $is-library: true !default;
+
+//layout variables
+$sidebar-width: clamp(20rem, 18vw, 25.9rem);
+$layout-gap: 0.7rem;
+
+

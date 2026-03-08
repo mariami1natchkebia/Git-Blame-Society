@@ -7,13 +7,16 @@
   color: $color;
 }
 
+
+// navigation button
+
 @mixin nav-button {
   background-color: rgba(v.$bg-main, 0.5);
   color: v.$text-secondary;
   padding: 0.8rem 1.5rem;
   border: none;
   border-radius: 0.8rem;
-  font-size: 1.2rem;
+  font-size: map.get(v.$font-size, subtitle);
   font-family: v.$font-base;
   display: flex;
   align-items: center;
@@ -34,6 +37,7 @@
   }
 }
 
+// filter chip
 
 @mixin filter-chip {
   background-color: transparent;
@@ -42,19 +46,18 @@
   flex-direction: row;
   align-items: center;
   color: v.$text-secondary;
-  font-size: 1.4rem;
+  font-size: map.get(v.$font-size, subtitle);
   border: none;
   border-radius: 0.8rem;
-  min-width: 19.6rem;
-  padding: 0.3rem 0 0.3rem 1.1rem;
+  padding: 0.8rem 1.5rem;
   gap: 0.9rem ;
   cursor: pointer;
       &:hover {
           color: v.$text-primary;
       }
           &:active {
-              background-color:v.$bg-primary;
-              color: v.$text-primary;
+              background-color:v.$nav-active-button;
+              color:#060606;
           }
 
 }

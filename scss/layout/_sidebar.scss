@@ -10,10 +10,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 259px;
   height: 100vh;
-  padding-top: 12px;
-  margin-left: 10px;
+
 
   @include m.mobile {
     display: none;
@@ -24,13 +22,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
+  gap: 1.rem;
 }
 
 .my-library {
   width: 100%;
-  height: 54px;
-  margin-bottom: 11px;
+  height: 5.4rem;
+  margin-bottom: 1.1rem;
 
   a{
     @include m.sidebar-menu(v.$side-icon-main);
@@ -45,11 +43,11 @@
 
       &.active {
         background-color: v.$bg-secondary !important; 
-        border-radius: 8px;
+        border-radius: 0.8rem;
         color: v.$text-secondary !important;
       
         .img {
-          height: 40px;
+          height: 4rem;
           filter: brightness(0) invert(1);
           opacity: 1;
         }
@@ -67,7 +65,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.4rem;
   
   li a {
     @include m.sidebar-menu(v.$side-icon-sub);

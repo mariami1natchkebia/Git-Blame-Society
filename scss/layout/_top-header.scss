@@ -75,3 +75,9 @@
 //     }
 //   }
 // }
+.top-header{
+@media (max-width:v.$bp-desktop){
+    display: none;
+}
+
+}
