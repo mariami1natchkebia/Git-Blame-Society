@@ -38,7 +38,7 @@
     gap: 1rem;
 }
 
-#more {
+input[id^="more"] {
     display: none;
 }
 
@@ -49,6 +49,7 @@
     position: absolute;
     top: 40px;
     right: 2rem;
+    z-index: 9;
     display: none;
     cursor: pointer;
 }
@@ -67,7 +68,7 @@
 }
 
 
-#more:checked + label + .more-menu {
+input[id^="more"]:checked ~ .more-menu {
     display: block;
 }
 
