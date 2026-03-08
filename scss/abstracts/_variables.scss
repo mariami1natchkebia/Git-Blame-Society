@@ -33,3 +33,7 @@ $font-weight: (
 
 //breakpoint
 $bp-desktop: 1200px;
+
+//layout variables
+$sidebar-width: clamp(20rem, 18vw, 25.9rem);
+$layout-gap: 0.7rem;
