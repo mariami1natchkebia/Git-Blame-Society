@@ -8,9 +8,10 @@
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
 </head>
 
+<!-- Discover page -->
 
 <body class="app-layout">
-    <aside class="sidebar">
+        <aside class="sidebar">
         <!-- mobile menu -->
         <!-- <nav class="mobile-menu">
             <div class="mobile-menu__item">
@@ -117,9 +118,11 @@
         </nav>
     </aside>
 
+
+
 <main class="content">
 
-<!-- Top-Header Section -->
+    <!-- Top-Header Section -->
 
     <header class="top-header">
         <div class="header-wrapper">
@@ -140,7 +143,7 @@
                             <path d="M12.8042 21.8062C14.0298 17.441 17.441 14.0298 21.8062 12.8042L23.6011 12.3003L21.8062 11.7964C17.441 10.5708 14.0298 7.1596 12.8042 2.79443L12.3003 0.999512L11.7964 2.79443C10.5708 7.1596 7.1596 10.5708 2.79443 11.7964L0.999512 12.3003L2.79443 12.8042C7.1596 14.0298 10.5708 17.441 11.7964 21.8062L12.3003 23.6011L12.8042 21.8062Z" stroke="currentColor" stroke-width="2"/>
                             </svg>
 
-                        <a href="discover.html"><span>Discover</span></a>
+                            <span>Discover</span>
                         </button>
                     </li>
                     <li>
@@ -149,7 +152,7 @@
                             <path d="M15.9159 15.7929C17.4535 14.2244 18.4016 12.0759 18.4016 9.70591C18.4016 4.90343 14.5084 1.01025 9.70594 1.01025C4.90346 1.01025 1.01028 4.90343 1.01028 9.70591C1.01028 14.5084 4.90346 18.4016 9.70594 18.4016C12.1385 18.4016 14.3377 17.4027 15.9159 15.7929ZM15.9159 15.7929L21.0103 21.0103" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round"/>
                             </svg>
 
-                            <span>Search</span>
+                        <a href="search-page.html"> <span>Search</span></a>
                         </button>
                     </li>
                 </ul>
@@ -204,307 +207,427 @@
         </div>
     </header>
 
-    <!-- search-page layout goes here -->
 
-<section class="main-content">  
-    <!-- section of recent searches -->
+    <section class="main-content discovery">
 
-    <section class="recent-searches">
-        <div class="album-heading">
-            <h2 class="section-title"> Recent Searches</h2>
-                <div class="icons-heading">
-                    <a href="#"><img src="./assets/more-icon.svg" alt="more"></a>
-                </div>
+
+<!-- filter for discover -->
+
+        <nav class="filter-section">
+            <div class="filters">
+                <button class="filter-btn">
+                    <span>Music</span>
+                </button>
+                
+                <button class="filter-btn">
+                    <span>EDM</span>
+                </button>
+
+                <button class="filter-btn">
+                    <span>Indie</span>
+                </button>
+
+                <button class="filter-btn">
+                    <span>Pop</span>
+                </button>
+
+                <button class="filter-btn">
+                    <span>Rock</span>
+                </button>
+
+                <button class="filter-btn">
+                    <span>Alt Rock</span>
+                </button>
+
+                <button class="filter-btn">
+                    <span>Country</span>
+                </button>
+
+                <button class="filter-btn">
+                    <span>R&B</span>
+                </button>
+
+                <button class="filter-btn">
+                    <span>Hip-Hop</span>
+                </button>
+
+                <button class="filter-btn">
+                    <span>Podcast</span>
+                </button>
+
+                <button class="filter-btn">
+                    <span>Audiobooks</span>
+                </button>
+            </div>
+        </nav>
+
+
+    <section class="discover-music">
+        <div class="music-content">
+            <div class="main-picture">
+                <img src="./assets/discover-page/getlucky.svg" class="album-cover" alt="">
+            </div>
+            <figure class="about-music">
+                <div class="image-album">
+                    <img src="./assets/discover-page/daftpunkimg.svg" alt="daftpunk"> 
+                </div>                   
+                <figcaption class="music-info">
+                    <div class="music-title">
+                        <h2 class="section-title">Get Lucky</h2>
+                    </div>
+                    <div>
+                      <ul class="details">
+                        <li>By Daft Punk</li>
+                        <li>2013</li>
+                        <li>6:05</li>
+                      </ul>
+                    </div>
+                    <div class="details-action">
+                        <button class="btn-action">
+                            <img src="./assets/discover-page/pause.svg" alt="pause">
+                        </button>
+
+                        <button class="btn-action">
+                            <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.16016 3.47961V19.7834C1.16016 20.7268 2.22649 21.2756 2.99416 20.7272L7.93081 17.201C8.73737 16.6249 9.82086 16.6249 10.6274 17.201L15.5641 20.7272C16.3317 21.2756 17.3981 20.7268 17.3981 19.7834V3.47961C17.3981 2.19848 16.3595 1.15991 15.0784 1.15991H3.47986C2.19872 1.15991 1.16016 2.19848 1.16016 3.47961Z" stroke="#898989" stroke-width="2.3197"/>
+                            </svg>
+                            <span>500K</span>
+                        </button>
+                        
+                        <button class="btn-action">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" rx="3" transform="matrix(1 0 0 -1 9.82617 31.3298)" stroke="#898989" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M11.8262 11.3298H27.8262C27.8262 9.67298 26.483 8.32983 24.8262 8.32983H14.8262C13.1693 8.32983 11.8262 9.67298 11.8262 11.3298Z" stroke="#898989" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M15.8262 21.3298H19.8262M23.8262 21.3298H19.8262M19.8262 21.3298V17.3298M19.8262 21.3298V25.3298" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="#898989" stroke-width="2.3573" stroke-linecap="round"/>
+                            <path d="M11.7852 23.0117L28.623 23.0117" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.7852 28.6245L28.623 28.6245" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.6897 22.0167V10.7406M20.6897 10.7406L16.0466 15.3837M20.6897 10.7406L25.3328 15.3837M28.981 20.3585V25.0016C28.981 26.4669 27.7931 27.6548 26.3278 27.6548L15.0516 27.6548C13.5863 27.6548 12.3984 26.4669 12.3984 25.0016V20.3585" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+
+                        <button class="btn-action">
+                            <img src="./assets/more-icon.svg" alt="more">
+                        </button>
+                    </div>
+                    <div class="select-genre">
+                        <button class="genres">
+                            <span>Rock</span>
+                        </button>
+
+                        <button class="genres">
+                            <span>Alt Rock</span>
+                        </button>
+                    </div>
+                </figcaption>
+            </figure>
         </div>
-                <div class="albums-container">
-                    <figure class="artists">
-                        <img src="./assets/album-pictures/daft.svg" alt="duft-punk">
-                        <figcaption> 
-                            <span>Daft Punk</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="artists">
-                        <img src="./assets/album-pictures/david.svg" alt="guns n roses">
-                        <figcaption> 
-                            <span>David Bowie</span>
-                        </figcaption>
-                    </figure>
-                    <figure class="recommendation-card">
-                        <div class="background-shadow"></div>
-                        <img src="./assets/album-pictures/blackhole.svg" class="album-cover" alt="blackhole">
-                        <figcaption class="description">
-                            <div class="title-wrapper">
-                                <span class="card-title">Black Holes and...</span>
-                            </div>
-                            <p class="album-description">Muse</p>
-                        </figcaption>
-                    </figure>
-                </div>    
-    </section>
-    
 
-    <!-- Browse all Section -->
+        <div class="music-content">
+            <div class="main-picture">
+                <img src="./assets/discover-page/getlucky.svg" class="album-cover" alt="">
+            </div>
+            <figure class="about-music">
+                <div class="image-album">
+                    <img src="./assets/discover-page/daftpunkimg.svg" alt="daftpunk">   
+                </div>                   
+                <figcaption class="music-info">
+                    <div class="music-title">
+                        <h2 class="section-title">Linkin Park Mix</h2>
+                    </div>
+                    <div>
+                      <ul class="details">
+                        <li>By Daft Punk</li>
+                        <li>2013</li>
+                        <li>6:05</li>
+                      </ul>
+                    </div>
+                    <div class="details-action">
+                        <button class="btn-action">
+                            <img src="./assets/discover-page/pause.svg" alt="pause">
+                        </button>
 
-    <section class="browse">
-        <h2 class="section-title">Browse All</h2>
-        <div class="album-heading">
-            <h3 class="section-subtitle"> Discover</h3>
-                <div class="icons-heading">
-                    <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
-                    <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                </div>
-            </div>
-        <div class="album-container">
-            <div class="genre-album midnight-blue">
-                <h4 class="genre-title">Made For You</h4>
-                <img src="./assets/rock-mix.svg" class="album-image" alt="rock-mix">
-            </div>
+                        <button class="btn-action">
+                            <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.16016 3.47961V19.7834C1.16016 20.7268 2.22649 21.2756 2.99416 20.7272L7.93081 17.201C8.73737 16.6249 9.82086 16.6249 10.6274 17.201L15.5641 20.7272C16.3317 21.2756 17.3981 20.7268 17.3981 19.7834V3.47961C17.3981 2.19848 16.3595 1.15991 15.0784 1.15991H3.47986C2.19872 1.15991 1.16016 2.19848 1.16016 3.47961Z" stroke="#898989" stroke-width="2.3197"/>
+                            </svg>
+                            <span>500K</span>
+                        </button>
+                        
+                        <button class="btn-action">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" rx="3" transform="matrix(1 0 0 -1 9.82617 31.3298)" stroke="#898989" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M11.8262 11.3298H27.8262C27.8262 9.67298 26.483 8.32983 24.8262 8.32983H14.8262C13.1693 8.32983 11.8262 9.67298 11.8262 11.3298Z" stroke="#898989" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M15.8262 21.3298H19.8262M23.8262 21.3298H19.8262M19.8262 21.3298V17.3298M19.8262 21.3298V25.3298" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album burnt-orange">
-                <h4 class="genre-title">New Releases</h4>
-                <img src="./assets/discover/new-releases.svg" class="album-image" alt="releases">
-            </div>
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="#898989" stroke-width="2.3573" stroke-linecap="round"/>
+                            <path d="M11.7852 23.0117L28.623 23.0117" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.7852 28.6245L28.623 28.6245" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album midnight-blue">
-                <h4 class="genre-title">Spotify Classics</h4>
-                <img src="./assets/discover/spotify-classics.svg" class="album-image" alt="classics">
-            </div>
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.6897 22.0167V10.7406M20.6897 10.7406L16.0466 15.3837M20.6897 10.7406L25.3328 15.3837M28.981 20.3585V25.0016C28.981 26.4669 27.7931 27.6548 26.3278 27.6548L15.0516 27.6548C13.5863 27.6548 12.3984 26.4669 12.3984 25.0016V20.3585" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album medium-purple">
-                <h4 class="genre-title">Charts</h4>
-                <img src="./assets/discover/charts.svg" class="album-image" alt="charts">
-            </div>
+                        <button class="btn-action">
+                            <img src="./assets/more-icon.svg" alt="more">
+                        </button>
+                    </div>
+                    <div class="select-genre">
+                        <button class="genres">
+                            <span>Rock</span>
+                        </button>
 
-            <div class="genre-album pinkish-purple">
-                <h4 class="genre-title">Trending</h4>
-                <img src="./assets/discover/trending.svg" class="album-image" alt="trending">
-            </div>
-
-            <div class="genre-album medium-purple">
-                <h4 class="genre-title ">Discover</h4>
-                <img src="./assets/discover/discover.svg" class="album-image" alt="discover">
-            </div>
-
-            <div class="genre-album gray">
-                <h4 class="genre-title">Spotify Singles</h4>
-                <img src="./assets/discover/singles.svg" class="album-image" alt="singles">
-            </div>
-
-            <div class="genre-album burnt-orange">
-                <h4 class="genre-title">Decades</h4>
-                <img src="./assets/discover/decades.svg" class="album-image" alt="decades">
-            </div>
+                        <button class="genres">
+                            <span>Alt Rock</span>
+                        </button>
+                    </div>
+                </figcaption>
+            </figure>
         </div>
-    </section>
 
-<!-- Genre Section -->
+        <div class="music-content">
+            <div class="main-picture">
+                <img src="./assets/discover-page/linkinpark.svg" alt="track">
+            </div>
+            <figure class="about-music mint">
+                <div class="image-album">
+                    <div class="background-shadow "></div>
+                    <img src="./assets/album-pictures/dailymix1.svg" class="album-cover" alt=""> 
+                </div>                   
+                <figcaption class="music-info">
+                    <div class="music-title">
+                        <h2 class="section-title">Linkin Park Mix</h2>
+                    </div>
+                    <div>
+                      <ul class="details">
+                        <li>By Spotify</li>
+                        <li>2023</li>
+                        <li>22 songs</li>
+                        <li>1 hr 14min</li>
+                      </ul>
+                    </div>
+                    <div class="details-action">
+                        <button class="btn-action">
+                            <img src="./assets/discover-page/pause.svg" alt="pause">
+                        </button>
 
-    <section class="genre">
-        <div class="album-heading">
-            <h3 class="section-subtitle"> Mood & Activity</h3>
-                <div class="icons-heading">
-                    <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
-                    <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                </div>
-            </div>
-        <div class="album-container">
-            <div class="genre-album forest-green">
-                <h4 class="genre-title">Pop</h4>
-                <img src="./assets/genres/pop.svg" class="album-image" alt="pop">
-            </div>
+                        <button class="btn-action">
+                            <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.16016 3.47961V19.7834C1.16016 20.7268 2.22649 21.2756 2.99416 20.7272L7.93081 17.201C8.73737 16.6249 9.82086 16.6249 10.6274 17.201L15.5641 20.7272C16.3317 21.2756 17.3981 20.7268 17.3981 19.7834V3.47961C17.3981 2.19848 16.3595 1.15991 15.0784 1.15991H3.47986C2.19872 1.15991 1.16016 2.19848 1.16016 3.47961Z" stroke="#898989" stroke-width="2.3197"/>
+                            </svg>
+                            <span>500K</span>
+                        </button>
+                        
+                        <button class="btn-action">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" rx="3" transform="matrix(1 0 0 -1 9.82617 31.3298)" stroke="#898989" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M11.8262 11.3298H27.8262C27.8262 9.67298 26.483 8.32983 24.8262 8.32983H14.8262C13.1693 8.32983 11.8262 9.67298 11.8262 11.3298Z" stroke="#898989" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M15.8262 21.3298H19.8262M23.8262 21.3298H19.8262M19.8262 21.3298V17.3298M19.8262 21.3298V25.3298" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album dark-orange">
-                <h4 class="genre-title">Country</h4>
-                <img src="./assets/genres/country.svg" class="album-image" alt="country">
-            </div>
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="#898989" stroke-width="2.3573" stroke-linecap="round"/>
+                            <path d="M11.7852 23.0117L28.623 23.0117" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.7852 28.6245L28.623 28.6245" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album dark-eggplant">
-                <h4 class="genre-title">Hip-Hop</h4>
-                <img src="./assets/genres/hip-hop.svg" class="album-image" alt="hip-hop">
-            </div>
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.6897 22.0167V10.7406M20.6897 10.7406L16.0466 15.3837M20.6897 10.7406L25.3328 15.3837M28.981 20.3585V25.0016C28.981 26.4669 27.7931 27.6548 26.3278 27.6548L15.0516 27.6548C13.5863 27.6548 12.3984 26.4669 12.3984 25.0016V20.3585" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album medium-teal">
-                <h4 class="genre-title">Rock</h4>
-                <img src="./assets/genres/rock.svg" class="album-image" alt="rock">
-            </div>
+                        <button class="btn-action">
+                            <img src="./assets/more-icon.svg" alt="more">
+                        </button>
+                    </div>
+                    <div class="select-genre">
+                        <button class="genres">
+                            <span>Rock</span>
+                        </button>
 
-            <div class="genre-album bright-red">
-                <h4 class="genre-title">Indie</h4>
-                <img src="./assets/genres/indie.svg" class="album-image" alt="indie">
-            </div>
-
-            <div class="genre-album midnight-blue">
-                <h4 class="genre-title ">Punk</h4>
-                <img src="./assets/genres/punk.svg" class="album-image" alt="punk">
-            </div>
-
-            <div class="genre-album bright-red">
-                <h4 class="genre-title">Metal</h4>
-                <img src="./assets/genres/instrumental.svg" class="album-image" alt="metall">
-            </div>
-
-            <div class="genre-album steel-blue">
-                <h4 class="genre-title">Instrumental</h4>
-                <img src="./assets/genres/instrumental.svg" class="album-image" alt="instrumental">
-            </div>
+                        <button class="genres">
+                            <span>Alt Rock</span>
+                        </button>
+                    </div>
+                </figcaption>
+            </figure>
         </div>
-    </section>
 
-
-<!-- Mood&Activity Section -->
-
-
-<section class="mood-activity">
-        <div class="album-heading">
-            <h3 class="section-subtitle"> Genre</h3>
-                <div class="icons-heading">
-                    <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
-                    <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                </div>
+        <div class="music-content">
+            <div class="main-picture">
+                <img src="./assets/discover-page/getlucky.svg" class="album-cover" alt="">
             </div>
-        <div class="album-container">
-            <div class="genre-album royal-blue">
-                <h4 class="genre-title">In the car</h4>
-                <img src="./assets/mood&activity/in-the-car.svg" class="album-image" alt="in-the-car">
-            </div>
+            <figure class="about-music">
+                <div class="image-album">
+                    <img src="./assets/discover-page/daftpunkimg.svg" alt="daftpunk">   
+                </div>                   
+                <figcaption class="music-info">
+                    <div class="music-title">
+                        <h2 class="section-title">Linkin Park Mix</h2>
+                    </div>
+                    <div>
+                      <ul class="details">
+                        <li>By Daft Punk</li>
+                        <li>2013</li>
+                        <li>6:05</li>
+                      </ul>
+                    </div>
+                    <div class="details-action">
+                        <button class="btn-action">
+                            <img src="./assets/discover-page/pause.svg" alt="pause">
+                        </button>
 
-            <div class="genre-album deep-pink">
-                <h4 class="genre-title">Mood</h4>
-                <img src="./assets/mood&activity/mood.svg" class="album-image" alt="mood">
-            </div>
+                        <button class="btn-action">
+                            <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.16016 3.47961V19.7834C1.16016 20.7268 2.22649 21.2756 2.99416 20.7272L7.93081 17.201C8.73737 16.6249 9.82086 16.6249 10.6274 17.201L15.5641 20.7272C16.3317 21.2756 17.3981 20.7268 17.3981 19.7834V3.47961C17.3981 2.19848 16.3595 1.15991 15.0784 1.15991H3.47986C2.19872 1.15991 1.16016 2.19848 1.16016 3.47961Z" stroke="#898989" stroke-width="2.3197"/>
+                            </svg>
+                            <span>500K</span>
+                        </button>
+                        
+                        <button class="btn-action">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" rx="3" transform="matrix(1 0 0 -1 9.82617 31.3298)" stroke="#898989" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M11.8262 11.3298H27.8262C27.8262 9.67298 26.483 8.32983 24.8262 8.32983H14.8262C13.1693 8.32983 11.8262 9.67298 11.8262 11.3298Z" stroke="#898989" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M15.8262 21.3298H19.8262M23.8262 21.3298H19.8262M19.8262 21.3298V17.3298M19.8262 21.3298V25.3298" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album gray">
-                <h4 class="genre-title">Workout</h4>
-                <img src="./assets/mood&activity/workout.svg" class="album-image" alt="workout">
-            </div>
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="#898989" stroke-width="2.3573" stroke-linecap="round"/>
+                            <path d="M11.7852 23.0117L28.623 23.0117" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.7852 28.6245L28.623 28.6245" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album dark-orange">
-                <h4 class="genre-title">Chill</h4>
-                <img src="./assets/mood&activity/chill.svg" class="album-image" alt="chill">
-            </div>
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.6897 22.0167V10.7406M20.6897 10.7406L16.0466 15.3837M20.6897 10.7406L25.3328 15.3837M28.981 20.3585V25.0016C28.981 26.4669 27.7931 27.6548 26.3278 27.6548L15.0516 27.6548C13.5863 27.6548 12.3984 26.4669 12.3984 25.0016V20.3585" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album midnight-blue">
-                <h4 class="genre-title">Sleep</h4>
-                <img src="./assets/mood&activity/sleep.svg" class="album-image" alt="sleep">
-            </div>
+                        <button class="btn-action">
+                            <img src="./assets/more-icon.svg" alt="more">
+                        </button>
+                    </div>
+                    <div class="select-genre">
+                        <button class="genres">
+                            <span>Rock</span>
+                        </button>
 
-            <div class="genre-album steel-blue">
-                <h4 class="genre-title ">Party</h4>
-                <img src="./assets/mood&activity/party.svg" class="album-image" alt="party">
-            </div>
-
-            <div class="genre-album bright-red">
-                <h4 class="genre-title">At Home</h4>
-                <img src="./assets/mood&activity/at-home.svg" class="album-image" alt="at-home">
-            </div>
-
-            <div class="genre-album dark-eggplant">
-                <h4 class="genre-title">Focus</h4>
-                <img src="./assets/mood&activity/focus.svg" class="album-image" alt="focus">
-            </div>
+                        <button class="genres">
+                            <span>Alt Rock</span>
+                        </button>
+                    </div>
+                </figcaption>
+            </figure>
         </div>
-    </section>
 
-<!--Entertaiment-section-->
+        <div class="music-content">
+            <div class="main-picture">
+                <img src="./assets/discover-page/getlucky.svg" class="album-cover" alt="">
+            </div>
+            <figure class="about-music">
+                <div class="image-album">
+                    <img src="./assets/discover-page/daftpunkimg.svg" alt="daftpunk">   
+                </div>                   
+                <figcaption class="music-info">
+                    <div class="music-title">
+                        <h2 class="section-title">Linkin Park Mix</h2>
+                    </div>
+                    <div>
+                      <ul class="details">
+                        <li>By Daft Punk</li>
+                        <li>2013</li>
+                        <li>6:05</li>
+                      </ul>
+                    </div>
+                    <div class="details-action">
+                        <button class="btn-action">
+                            <img src="./assets/discover-page/pause.svg" alt="pause">
+                        </button>
 
-<section class="entertaiment">
-        <div class="album-heading">
-            <h3 class="section-subtitle"> Entertaiment</h3>
-                <div class="icons-heading">
-                    <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
-                    <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                </div>
-            </div>
-        <div class="album-container">
-            <div class="genre-album dark-red">
-                <h4 class="genre-title">Netflix</h4>
-                <img src="./assets/entertaiment/Netflix-ent.svg" class="album-image" alt="netflix">
-            </div>
+                        <button class="btn-action">
+                            <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.16016 3.47961V19.7834C1.16016 20.7268 2.22649 21.2756 2.99416 20.7272L7.93081 17.201C8.73737 16.6249 9.82086 16.6249 10.6274 17.201L15.5641 20.7272C16.3317 21.2756 17.3981 20.7268 17.3981 19.7834V3.47961C17.3981 2.19848 16.3595 1.15991 15.0784 1.15991H3.47986C2.19872 1.15991 1.16016 2.19848 1.16016 3.47961Z" stroke="#898989" stroke-width="2.3197"/>
+                            </svg>
+                            <span>500K</span>
+                        </button>
+                        
+                        <button class="btn-action">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="20" height="20" rx="3" transform="matrix(1 0 0 -1 9.82617 31.3298)" stroke="#898989" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M11.8262 11.3298H27.8262C27.8262 9.67298 26.483 8.32983 24.8262 8.32983H14.8262C13.1693 8.32983 11.8262 9.67298 11.8262 11.3298Z" stroke="#898989" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M15.8262 21.3298H19.8262M23.8262 21.3298H19.8262M19.8262 21.3298V17.3298M19.8262 21.3298V25.3298" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album ligh-pink">
-                <h4 class="genre-title">Anime</h4>
-                <img src="./assets/entertaiment/anime-ent.svg" class="album-image" alt="anime">
-            </div>
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="#898989" stroke-width="2.3573" stroke-linecap="round"/>
+                            <path d="M11.7852 23.0117L28.623 23.0117" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.7852 28.6245L28.623 28.6245" stroke="#898989" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album regular-blue">
-                <h4 class="genre-title">Disney</h4>
-                <img src="./assets/entertaiment/disney-ent.svg" class="album-image" alt="disney">
-            </div>
+                        <button class="btn-action">
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.6897 22.0167V10.7406M20.6897 10.7406L16.0466 15.3837M20.6897 10.7406L25.3328 15.3837M28.981 20.3585V25.0016C28.981 26.4669 27.7931 27.6548 26.3278 27.6548L15.0516 27.6548C13.5863 27.6548 12.3984 26.4669 12.3984 25.0016V20.3585" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
 
-            <div class="genre-album medium-pink">
-                <h4 class="genre-title">Gaming</h4>
-                <img src="./assets/entertaiment/gaming-ent.svg" class="album-image" alt="gaming">
-            </div>
+                        <button class="btn-action">
+                            <img src="./assets/more-icon.svg" alt="more">
+                        </button>
+                    </div>
+                    <div class="select-genre">
+                        <button class="genres">
+                            <span>Rock</span>
+                        </button>
+
+                        <button class="genres">
+                            <span>Alt Rock</span>
+                        </button>
+                    </div>
+                </figcaption>
+            </figure>
         </div>
-    </section>
 
-    <!--Podcasts Section-->
-    
-    <section class="podcast-section">
-        <div class="album-heading">
-            <h3 class="section-subtitle"> Podcasts</h3>
-                <div class="icons-heading">
-                    <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
-                    <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                </div>
-            </div>
-        <div class="album-container">
-            <div class="genre-album medium-teal">
-                <h4 class="genre-title">Podcasts</h4>
-                <img src="./assets/podcasts/podcasts.svg" class="album-image" alt="podcasts">
-            </div>
 
-            <div class="genre-album pinky">
-                <h4 class="genre-title">Podcasts Charts</h4>
-                <img src="./assets/podcasts/charts.svg" class="album-image" alt="anime">
-            </div>
 
-            <div class="genre-album green">
-                <h4 class="genre-title">Podcasts New Releases</h4>
-                <img src="./assets/podcasts/podcast-releases.svg" class="album-image" alt="pod-charts">
-            </div>
 
-            <div class="genre-album new-red">
-                <h4 class="genre-title">Video</h4>
-                <img src="./assets/podcasts/video.svg" class="album-image" alt="video">
-            </div>
-        </div>
     </section>
 
 
-    <!--Audiobooks Section-->
-    
-    <section class="audiobooks">
-        <div class="album-heading">
-            <h3 class="section-subtitle"> Audiobooks</h3>
-                <div class="icons-heading">
-                    <a href="#"><img src="./assets/arrow-icon.svg"  alt="arrow-left"></a>
-                    <a href="#"><img src="./assets/arrow-icon.svg" class="right " alt="arrow-right"></a>
-                </div>
-            </div>
-        <div class="album-container">
-            <div class="genre-album midnight-blue">
-                <h4 class="genre-title audiobook">Audiobooks</h4>
-            </div>
 
-            <div class="genre-album medium-purple">
-                <h4 class="genre-title audiobook">Sci-Fi & Fantasy Essentials</h4>
-            </div>
 
-            <div class="genre-album dark-eggplant">
-                <h4 class="genre-title audiobook">Fiction & Literature</h4>
-            </div>
-
-            <div class="genre-album midnight-blue">
-                <h4 class="genre-title audiobook">Mystery & Thriller</h4>
-            </div>
-
-            <div class="genre-album medium-teal">
-                <h4 class="genre-title audiobook">Self-Help</h4>
-            </div>
-        </div>
-    </section>
-    
 
 
 <!-- Player bar -->
@@ -617,12 +740,8 @@
                 </button>
             </div>
         </section>
-
-
-</section>
-
-
+    </section>
 </main>
-
+    
 </body>
 </html>

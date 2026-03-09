@@ -40,7 +40,7 @@
 // filter chip
 
 @mixin filter-chip {
-  background-color: transparent;
+  background-color: v.$bg-secondary;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;

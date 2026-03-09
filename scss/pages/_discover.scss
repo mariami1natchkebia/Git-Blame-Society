@@ -1,0 +1,98 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+@use "sass:map";
+
+// track styles 
+
+
+.discovery {
+    background-image: url(/assets/discover-page/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.music-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    margin: 5rem 0 5rem 0;
+}
+
+.about-music {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: rgba(#555555, 0.05);
+
+}
+
+.image-album {
+    position: relative;
+}
+
+.music-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2rem;
+}
+
+.section-title {
+    h2 {
+        font-size: 3rem;
+        color: v.$text-primary;
+    }
+    
+}
+
+.details {
+    @include m.flex;
+    color: v.$text-secondary;
+    gap: 1rem;
+
+    li:not(:first-child)::before {
+        content: "•";  
+        margin-right: 0.5rem;     
+        color: v.$text-secondary;       
+}  
+}
+
+
+.details-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+        span {
+            font-size: map.get(v.$font-size, subtitle);
+            color: v.$text-secondary;
+        }
+}
+
+.btn-action {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.select-genre {
+    display: flex;
+    gap: 1rem;
+}
+
+.genres {
+    padding: 0.8rem 1.3rem;
+    border: 0.2rem solid rgba(v.$text-secondary, 0.05);
+    border-radius: 4.4rem;
+        span {
+            color: v.$text-secondary;
+            font-size: map.get(v.$font-size, caption);
+        }
+}
