@@ -55,12 +55,13 @@
     @include m.flex;
     color: v.$text-secondary;
     gap: 1rem;
-}
+
     li:not(:first-child)::before {
         content: "•";  
         margin-right: 0.5rem;     
         color: v.$text-secondary;       
 }  
+}
 
 
 .details-action {
