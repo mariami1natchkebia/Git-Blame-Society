@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+@use "sass:map";
+
+#panel-albums .albums-list-view,
+#panel-albums .albums-grid-view {
+  display: none;
+}
+
+#panel-albums #albums-list:checked ~ .albums-list-view {
+  display: block;
+}
+
+#panel-albums #albums-grid:checked ~ .albums-grid-view {
+  display: grid;
+}
+
+#panel-albums input[name="album-view"] {
+  display: none;
+}
+
+.alt-nav-btns {
+  display: none;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+#artist-albums:checked ~ .artist-navigation .alt-nav-btns {
+  display: flex;
+}
