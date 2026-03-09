@@ -3,6 +3,7 @@
 
     .app-layout{
         min-height: 100vh;
+        overflow: hidden;
         background-color: v.$bg-main;
         display: grid;
         grid-template-columns: v.$sidebar-width minmax(0, 1fr);
@@ -14,7 +15,6 @@
 }
 
     main {
-        padding-inline:0.7rem;
         min-width: 0;
         padding-inline: v.$layout-gap;
     }
@@ -23,7 +23,7 @@
         border-radius: 1rem;
         border: 0.1rem solid v.$bg-secondary;
         padding-inline:2.5rem;
-        margin-bottom:0.7rem;
+        margin-bottom:0.5rem;
         overflow-y: auto;
         overflow-x: hidden;
         max-height: calc(100vh - 16rem);
