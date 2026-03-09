@@ -121,6 +121,10 @@
   cursor: pointer;
   font-size: map.get(v.$font-size, subtitle);
   color: v.$text-primary;
+  &:hover{
+    background-color: v.$nav-active-button;
+    color:v.$bg-main;
+  }
 }
 
 //tabs
