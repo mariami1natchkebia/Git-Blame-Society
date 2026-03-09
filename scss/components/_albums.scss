@@ -3,7 +3,7 @@
 @use "sass:map";
 
 // styles for album sections
-.recommendations, .favorite-artists, .for-you, .audiobooks, .recommendations, .podcasts, .episodes {
+.recommendations-section, .favorite-artists-section, .for-you-section, .audiobooks-section, .recommendations-section, .podcasts-section, .episodes-section {
     margin-top: 3rem;
     flex: 0 0 auto;
 }
@@ -55,8 +55,8 @@
             font-size: map.get(v.$font-size, subtitle);
             color: v.$text-primary;
         }
-            &:hover {
-                transform: scale(1.1);
-            }
+            //&:hover {
+           //     transform: scale(1.05);
+          //  }
 
 }
