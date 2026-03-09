@@ -45,12 +45,11 @@
 
 .joe {
     margin:2rem 5rem 0 5.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
-aside-btns {
-    color: v.$text-primary;
-    font-size: map.get(v.$font-size, caption);
-}
 
 .follow{
     background-color: rgba(v.$text-secondary, 0.25);
