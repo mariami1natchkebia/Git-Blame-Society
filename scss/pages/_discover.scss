@@ -4,22 +4,30 @@
 
 // track styles 
 
+
+
 .music-content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap:5rem;
+    margin: 5rem 0 5rem 0;
 }
 
 .about-music {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 1.6rem;
     margin-top: 2rem;
     border-radius: 1rem;
-    position: relative;
+    padding: 3rem;
+    background-color: rgba(#555555, 0.05);
 
+}
+
+.image-album {
+    position: relative;
 }
 
 .music-info {
@@ -66,7 +74,7 @@
 
 .genres {
     padding: 0.8rem 1.3rem;
-    border: 0.2rem solid v.$text-secondary;
+    border: 0.2rem solid rgba(v.$text-secondary, 0.05);
     border-radius: 4.4rem;
         span {
             color: v.$text-secondary;
