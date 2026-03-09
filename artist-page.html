@@ -149,7 +149,7 @@
                                 <path d="M15.9159 15.7929C17.4535 14.2244 18.4016 12.0759 18.4016 9.70591C18.4016 4.90343 14.5084 1.01025 9.70594 1.01025C4.90346 1.01025 1.01028 4.90343 1.01028 9.70591C1.01028 14.5084 4.90346 18.4016 9.70594 18.4016C12.1385 18.4016 14.3377 17.4027 15.9159 15.7929ZM15.9159 15.7929L21.0103 21.0103" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round"/>
                                 </svg>
 
-                                <a href="search-page.html"><span class="nav-text">Search</span></a>
+                                <a href="search-page.html"><span class="secondary-text">Search</span></a>
                             </button>
                         </li>
                     </ul>
@@ -249,7 +249,7 @@
                     </div>
             </section>
             
-<!--ARTIST MENU-->
+    <!--ARTIST MENU-->
             <section class="artist-tabs">
                 <input type="radio" name="artist-tab" id="artist-home" checked>
                 <input type="radio" name="artist-tab" id="artist-albums">
@@ -281,49 +281,293 @@
         <!--home tab-->
             <section class="artist-tab-content" id="panel-home">
                 <div class="artist-content-main">
-                    <section class="top-tracks">
-                    <h2 class="section-title">Your most played</h2>
-                    <ol class="track-list">
-                        <li class="track-item">
-                        <span class="track-number">1</span>
-                        <img src="./assets/artist-page/track-1.svg" alt="one more time">
-                        <div class="track-meta">
-                            <h3>One More Time</h3>
-                            <p>Daft Punk</p>
-                        </div>
-                        <span class="track-duration">5:20</span>
-                        <button class="icon-btn" type="button" aria-label="Like track">♡</button>
-                        </li>
+                    <div class="top-tracks">
+                        <section class="tracks-section">
+                        <h2 class="section-title">Your most played</h2>
+                        <ol class="track-list">
+                            <li class="track-item">
+                                <span class="secondary-text">1</span>
+                                <img src="./assets/artist-page/track-1.svg" alt="Album cover for One More Time">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">One More Time</h3>
+                                    <p class="secondary-text">Daft Punk</p>
+                                </div>
+                                <span class="track-placeholder"></span>
+                                <span class="secondary-text">5:20</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>
 
-                        <li class="track-item">
-                        <span class="track-number">2</span>
-                        <img src="./assets/track-2.jpg" alt="Get Lucky cover">
-                        <div class="track-meta">
-                            <h3>Get Lucky</h3>
-                            <p>Daft Punk</p>
-                        </div>
-                        <span class="track-duration">4:35</span>
-                        <button class="icon-btn" type="button" aria-label="Like track">♡</button>
-                        </li>
-                    </ol>
+                            <li class="track-item">
+                                <span class="secondary-text">2</span>
+                                <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for get lucky">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">Get Lucky</h3>
+                                    <p class="secondary-text">Daft Punk</p>
+                                </div>
+                                <span class="track-placeholder"></span>
+                                <span class="secondary-text">4:35</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>
+                            
+                            <li class="track-item">
+                                <span class="secondary-text">3</span>
+                                <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Give Life Back to Music">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">Give Life Back to Music</h3>
+                                    <p class="secondary-text">Daft Punk</p>
+                                </div>
+                                <span class="track-placeholder"></span>
+                                <span class="secondary-text">4:35</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>
+
+                            <li class="track-item">
+                                <span class="secondary-text">4</span>
+                                <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Instant Crush">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">Instant Crush</h3>
+                                    <p class="secondary-text">Daft Punk, Julian Casablancas</p>
+                                </div>
+                                <span class="track-placeholder"></span>
+                                <span class="secondary-text">5:37</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>
+
+                            <li class="track-item">
+                                <span class="secondary-text">5</span>
+                                <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Around the world">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">Around the world</h3>
+                                    <p class="secondary-text">Daft Punk</p>
+                                </div>
+                                <span class="track-placeholder"></span>
+                                <span class="secondary-text">4:35</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>                        
+                        </ol>
+                    </section>    
+                    <section class="tracks-section">
+                        <h2 class="section-title">Popular</h2>
+                        <ol class="track-list">
+                            <li class="track-item">
+                                <span class="secondary-text">1</span>
+                                <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for get lucky">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">Get lucky</h3>
+                                    <p class="secondary-text">Daft Punk</p>
+                                </div>
+                                <span class="secondary-text">1,064,097,461</span>
+                                <span class="secondary-text">4:35</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>
+
+                            <li class="track-item">
+                                <span class="secondary-text">2</span>
+                                <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Instant Crush">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">Instant Crush</h3>
+                                    <p class="secondary-text">Daft Punk, Julian Casablancas</p>
+                                </div>
+                                <span class="secondary-text">598,754,929</span>
+                                <span class="secondary-text">5:37</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>
+                            
+                            <li class="track-item">
+                                <span class="secondary-text">3</span>
+                                <img src="./assets/artist-page/track-1.svg" alt="Album cover for One More Time">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">One More Time</h3>
+                                    <p class="secondary-text">Daft Punk</p>
+                                </div>
+                                <span class="secondary-text">578,637,618</span>
+                                <span class="secondary-text">5:20</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>
+
+                            <li class="track-item">
+                                <span class="secondary-text">4</span>
+                                <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Give Life Back to Music">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">Give Life Back to Music</h3>
+                                    <p class="secondary-text">Daft Punk</p>
+                                </div>
+                                <span class="secondary-text">490,307,607</span>
+                                <span class="secondary-text">4:35</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>
+
+                            <li class="track-item">
+                                <span class="secondary-text">5</span>
+                                <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Around the world">
+                                <div class="track-info">
+                                    <h3 class="music-list-title">Around the world</h3>
+                                    <p class="secondary-text">Daft Punk</p>
+                                </div>
+                                <span class="secondary-text">366,613,346</span>
+                                <span class="secondary-text">4:35</span>
+                                <div class="buttons">
+                                <button class="icon-btn">
+                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                                <div class="buttons">
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                <button class="track-placeholder-icon"></button>
+                                </div>
+                            </li>
+                        </ol>
                     </section>
-
-                    <aside class="artist-pick">
-                    <h2>Artist Pick</h2>
-
-                    <div class="artist-pick-card">
-                        <img src="./assets/pick-cover.jpg" alt="Best of Daft Punk album cover">
-                        <div class="artist-pick-card__content">
-                        <p>Listen to the Best of Daft Punk</p>
-                        </div>
-                    </div>
-
-                    <div class="artist-pick-image">
-                        <img src="./assets/artist-pick-image.jpg" alt="Daft Punk">
-                    </div>
-                    </aside>
                 </div>
-            </section>
+                
+                <aside class="artist-pick">
+                    <div class="artist-pick-section">
+                        <h2 class="section-title">Artist Pick</h2>
+                            <figure class="artist-pick-card">
+                                <div class="shadow-card"></div>
+                                <img src="./assets/artist-page/daft-punk-cover.svg"
+                                    alt="Best of Daft Punk album cover">
+                                <figcaption class="card-title">
+                                    Listen to the Best of Daft Punk
+                                </figcaption>
+                            </figure>
+                    </div>
+                    <div class="artist-pick-overview">
+                        <img src="./assets/artist-page/daft-punk-cover-large.svg" alt="Daft Punk">
+                        <p class="artist-overview">As they evolved from '90s French house pioneers to 2000s dance tastemakers to mainstream heroes in the 2010s, Daft Punk remained one of dance music's most iconic acts...</p>
+                    </div>
+                    <div class="artist-buttons">
+                        <button class="artist-button">Funk</button>
+                        <button class="artist-button">Electronic Music</button>
+                        <button class="artist-button">Disco</button>
+                        <button class="artist-button">Soft Rock</button>
+                        <button class="artist-button">Progressive Pop</button>
+                    </div>
+                </aside>
+            </div>
+        </section>
             <section class="artist-tab-content" id="panel-albums">
                 </section>
 
@@ -447,5 +691,4 @@
 
     </footer>
 </body>
-
 </html>
