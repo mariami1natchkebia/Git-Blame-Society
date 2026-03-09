@@ -3,7 +3,7 @@
 @use "sass:map";
 
 .podcast-page{
-    background: linear-gradient(180deg, #A5602A 0%, #060606 100%);
+    background: linear-gradient(180deg, rgba(165, 96, 42, 0.45) 0%, rgba(6, 6, 6, 0.45) 100%);
     display: flex;
     justify-content: space-between;
 }
@@ -18,8 +18,17 @@
     padding: 3rem;
 }
 
-.pod {
+.pod, .p-about {
     font-weight: map.get(v.$font-weight, regular);
+}
+
+.by-pod{
+    display: flex;
+    gap: 1rem;
+}
+
+.podcast-btn {
+    background-color: transparent;
 }
 
 .podcasts-about {
@@ -52,3 +61,4 @@ aside-btns {
     display: flex;
     gap: 1.4rem;
 }
+
