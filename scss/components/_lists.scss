@@ -63,3 +63,15 @@
 .track-info{
     margin-left: 1rem;
 }
+
+
+// liked songs styles goes here
+
+.like {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  margin: 1.1rem 0 1.6rem 0 ;
+}
+

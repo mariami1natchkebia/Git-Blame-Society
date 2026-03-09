@@ -158,6 +158,7 @@ svg:active {
 
 .library-btn {
     @include m.filter-chip;
+    background-color: transparent;
     &:active {
         background-color: v.$text-secondary;
     }
