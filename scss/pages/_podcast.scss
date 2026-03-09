@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+@use "sass:map";
+
+.podcast-page{
+    background: linear-gradient(180deg, #A5602A 0%, #060606 100%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-podcast {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.6rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.pod {
+    font-weight: map.get(v.$font-weight, regular);
+}
+
+.podcasts-about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.podcast-name {
+    display: flex;
+    gap: 1rem;
+}
+
+.joe {
+    margin:2rem 5rem 0 5.7rem;
+}
+
+aside-btns {
+    color: v.$text-primary;
+    font-size: map.get(v.$font-size, caption);
+}
+
+.follow{
+    background-color: rgba(v.$text-secondary, 0.25);
+    border: none;
+}
+
+.interactions {
+    display: flex;
+    gap: 1.4rem;
+}
