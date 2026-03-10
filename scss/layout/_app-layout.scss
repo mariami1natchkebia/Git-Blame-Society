@@ -43,3 +43,11 @@
             display: none;
         }
     }
+
+    #friends:checked ~ .main-content-friends-aside {
+  display: block;
+}
+
+#friends:not(:checked) ~ .main-content-friends-aside {
+  display: none;
+}

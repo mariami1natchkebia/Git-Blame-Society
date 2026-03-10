@@ -117,7 +117,7 @@
             </nav>
         </aside>
 
-        <main class="content">
+<main class="content">
 
             <!-- Top-Header Section -->
 
@@ -174,7 +174,8 @@
 
                             </a>
                         </li>
-                        <li>
+                        <input type="checkbox" id="friends">
+                        <label for="friends"><li>
                             <a href="#">
                                 <svg width="35" height="26" viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M26.5729 6.73524C26.5729 8.5951 25.0652 10.1028 23.2054 10.1028C21.3455 10.1028 19.8378 8.5951 19.8378 6.73524C19.8378 4.87539 21.3455 3.36768 23.2054 3.36768C25.0652 3.36768 26.5729 4.87539 26.5729 6.73524Z" stroke="currentColor" stroke-width="2.02054"/>
@@ -183,7 +184,7 @@
                                 <path d="M11.7865 13.4705C9.59068 13.4705 7.44399 14.1204 5.61695 15.3384L4.86716 15.8383C3.93031 16.4629 3.36758 17.5143 3.36758 18.6403V20.3178C3.36758 21.1858 4.07118 21.8894 4.93912 21.8894H11" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
 
-                            </a>
+                            </a></label>
                         </li>
                         <li>
                             <a href="#">
@@ -495,6 +496,78 @@
                 </div>
             </div>
         </nav>
+
+        <aside class="friends-aside">
+            <div class="filters">
+                <button class="filter-btn">
+                    <span>All</span>
+                </button>
+                <div class="friends-action">
+                    <button>
+                        <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1541 6.73512C15.1541 8.59498 13.6464 10.1027 11.7865 10.1027C9.92666 10.1027 8.41895 8.59498 8.41895 6.73512C8.41895 4.87527 9.92666 3.36755 11.7865 3.36755C13.6464 3.36755 15.1541 4.87527 15.1541 6.73512Z" stroke="#898989" stroke-width="2.02054"/>
+                        <path d="M8.41903 13.4703L4.86725 15.8382C3.9304 16.4628 3.36768 17.5142 3.36768 18.6402V20.3177C3.36768 21.1857 4.07127 21.8893 4.93921 21.8893H17.6798" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.1541 14.3124H17.6797M20.2054 14.3124H17.6797M17.6797 14.3124V11.7867M17.6797 14.3124V16.8381" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4701 3.36743L8.41878 8.41878M3.36743 13.4701L8.41878 8.41878M8.41878 8.41878L3.36743 3.36743M8.41878 8.41878L13.4701 13.4701" stroke="#898989" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <section class="friend-list">
+                    <figure class="about-music friend-listening">
+                            <img src="./assets/friend1.svg" alt="Your Friend">                   
+                        <figcaption class="music-info">
+                            <div class="music-title">
+                                <h2 class="card-subtitle ">FriendlyMusicListener</h2>
+                            </div>
+                            <div>
+                            <ul class="details friend">
+                                <li><img src="./assets/playing.svg" alt="playing track"></li>
+                                <li>Goosebumps</li>
+                                <li>Travis Scott</li>
+                            </ul>
+                            </div>
+                        </figcaption>
+                    </figure>  
+
+                    <figure class="about-music">
+                            <img src="./assets/friend1.svg" alt="Your Friend">                   
+                        <figcaption class="music-info">
+                            <div class="music-title">
+                                <h2 class="card-subtitle ">FriendlyMusicListener</h2>
+                            </div>
+                            <div>
+                            <ul class="details friend">
+                                <li><img src="./assets/playing.svg" alt="playing track"></li>
+                                <li>Goosebumps</li>
+                                <li>Travis Scott</li>
+                            </ul>
+                            </div>
+                        </figcaption>
+                    </figure>  
+
+                    <figure class="about-music">
+                            <img src="./assets/friend1.svg" alt="Your Friend">                   
+                        <figcaption class="music-info">
+                            <div class="music-title">
+                                <h2 class="card-subtitle ">FriendlyMusicListener</h2>
+                            </div>
+                            <div>
+                            <ul class="details friend">
+                                <li><img src="./assets/playing.svg" alt="playing track"></li>
+                                <li>Goosebumps</li>
+                                <li>Travis Scott</li>
+                            </ul>
+                            </div>
+                        </figcaption>
+                    </figure>  
+            </section>
+        </aside>
 
     <!-- Albums Section -->
 
