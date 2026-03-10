@@ -49,13 +49,6 @@
         display: none;
     }
     
-    .friends-aside{
-        display: none;
-        border-radius: 1rem;
-        border: 0.1rem solid v.$bg-secondary;
-        padding-inline:2.5rem;
-        margin-bottom:0.5rem;
-    }
 
     body:has(#friends:checked) .friends-aside {
         display: block;

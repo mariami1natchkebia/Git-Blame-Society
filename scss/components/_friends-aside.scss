@@ -1,0 +1,23 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+
+// aside styles
+
+.friends-aside{
+    display: none;
+    border-radius: 1rem;
+    border: 0.1rem solid v.$bg-secondary;
+    padding-inline:2.5rem;
+    margin-bottom:0.5rem;
+}
+
+#friends {
+    display: none;
+}
+
+
+body:has(#friends:checked) .friends-aside {
+    display: block;
+    
+}
