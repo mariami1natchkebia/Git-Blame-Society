@@ -84,3 +84,43 @@
 }
 
 //album list view//
+.albums-list-view {
+  @include m.flex($direction: column, $align: stretch);
+  gap: 1.1rem;
+}
+
+.album-row {
+  display: grid;
+  grid-template-columns: 5rem 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.album-cover-small {
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+
+.album-info {
+  min-width: 0;
+}
+
+.title-wrapper {
+  min-width: 0;
+  @include m.flex($justify: flex-start, $align: center);
+  gap: 0.6rem;
+}
+
+.album-controls {
+  @include m.flex($justify: flex-start, $align: center);
+  gap: 0.6rem;
+}
+
+.album-arrow {
+  background: transparent;
+  border: none;
+}
