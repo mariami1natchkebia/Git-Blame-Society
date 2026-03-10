@@ -183,8 +183,8 @@
     border-top-left-radius: 0.725rem;
     border-top-right-radius: 0.725rem;
     position: absolute;
-    top: -0.1rem;
-    left: 1rem;
+    top: -0.5rem;
+    left: 2rem;
   }
 }
 
@@ -215,13 +215,4 @@
     color:v.$bg-main;
   }
 }
-}
-
-.alt-nav-btns {
-  display: none;
-  gap: 0.8rem;
-}
-
-#artist-albums:checked ~ .artist-navigation .alt-nav-btns {
-  display: flex;
 }
