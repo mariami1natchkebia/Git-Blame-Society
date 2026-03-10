@@ -20,6 +20,13 @@
 
 .pod, .p-about {
     font-weight: map.get(v.$font-weight, regular);
+    color: v.$text-secondary;
+    display: block;
+    width: 87.9rem;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .by-pod{
@@ -41,6 +48,9 @@
 .podcast-name {
     display: flex;
     gap: 1rem;
+        .section-subtitle {
+            color: v.$text-primary;
+        }
 }
 
 .joe {
