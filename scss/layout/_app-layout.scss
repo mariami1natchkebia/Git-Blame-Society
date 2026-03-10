@@ -40,14 +40,34 @@
     aside{
         width:v.$sidebar-width;
         @media (max-width:v.$bp-desktop){
-            display: none;
+            // display: none;
         }
     }
 
-    #friends:checked ~ .main-content-friends-aside {
-  display: block;
-}
 
-#friends:not(:checked) ~ .main-content-friends-aside {
-  display: none;
-}
+    #friends {
+        display: none;
+    }
+    
+    .friends-aside{
+        display: none;
+        border-radius: 1rem;
+        border: 0.1rem solid v.$bg-secondary;
+        padding-inline:2.5rem;
+        margin-bottom:0.5rem;
+    }
+
+    body:has(#friends:checked) .friends-aside {
+        display: block;
+        
+    }
+
+    .main-aside {
+        display: flex;
+        flex-direction: row-reverse; 
+        gap: 0.5rem;
+    }
+
+    .main-content {
+        flex: 1; 
+    }
