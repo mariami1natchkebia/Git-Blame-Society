@@ -1,78 +1,156 @@
-@use "../abstracts/variables" as v;
-@use "../abstracts/mixins" as m;
-@use "sass:map";
+  @use "../abstracts/variables" as v;
+  @use "../abstracts/mixins" as m;
+  @use "sass:map";
 
-.artist-content-main {
-  display: flex;
-  gap: 4.7rem;
-  align-items: flex-start;
+  .track-list {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
 
-  .icon-btn svg {
-    fill: none;
-}
+    //button styles
+    .icon-btn:active svg path {
+      fill: v.$primary-accent;
+      stroke: v.$primary-accent;
+  }
 
-.icon-btn.active svg {
-  fill:v.$primary-accent;
-}
-}
-
-.top-tracks {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
-}
-
-.artist-pick {
-  width: 32rem;
-  flex-shrink: 0;
-}
-
-.track-list {
-  list-style: none;
-  margin-top: 2rem;
-  padding: 0;
-}
-
-.track-item {
-  display: grid;
-  grid-template-columns: 3rem 4rem minmax(0, 1.6fr) minmax(0, 1.2fr) 4rem 3rem 3rem 3rem 3rem;
-  align-items:center;
-  gap: 1rem;
-  row-gap:0.5rem;
-  width: 100%;
-  padding: 1.2rem 1.6rem;
-
-  .buttons {
-  display: flex;
-  align-items: center;
-  gap: 0.02rem;
-
-    :active {
-        fill: v.$primary-accent;
-        color: v.$primary-accent;
-        }
+    .hover-icon {
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
     }
+
+    .track-item:hover .hover-icon {
+      visibility: visible;
+      color:v.$nav-active-button;
+    }
+
+.track-check {
+  display: none;
 }
 
-.artist-tab-content {
-  padding:4rem 2.5rem;
-} 
+.check-btn {
+  position: relative;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color:v.$nav-active-button;
+}
 
-.track-info{
-    margin-left: 1rem;
+.icon-unchecked,
+.icon-checked {
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+
+.icon-checked {
+  display:none;
+}
+
+.track-check:checked + .check-btn .icon-unchecked {
+  display: none;
+}
+
+.track-check:checked + .check-btn .icon-checked {
+  display:block;
+}
+
+.check-btn {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.track-item:hover .check-btn {
+  opacity: 1;
+}
 }
 
 
-// liked songs styles goes here
+  .col-number {
+    width: 4.2rem;
+  }
 
-.like {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  align-items: flex-end;
-  margin: 1.1rem 0 1.6rem 0 ;
+  .col-title {
+    width: 30rem;
+  }
+
+  .col-album {
+    width: 30rem;
+  }
+  .col-duration {
+    width: 7rem;
+  }
+
+  .col-like, .col-download, .col-more, .col-add, .checkbox {
+    width: 4.2rem;
+  }
+
+  .space{
+    width:auto;
+  }
+
+  .track-list th {
+    text-align: left;
+    padding: 1rem;
+    font-weight: map.get(v.$font-weight, regular);
+  }
+
+  .track-list td {
+    padding: 1rem;
+    text-align: left;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.track-item:hover td {
+  background: rgba(255,255,255,0.05);
 }
 
 
+  .track-list thead tr {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .track-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 0;
+  }
+
+  .track-title img {
+    width: 5.1rem;
+    height: 5.1rem;
+    flex-shrink: 0;
+  }
+
+  .track-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .artist-tab-content {
+    padding:4rem 2.5rem;
+  } 
+
+  .track-item td:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+  .track-item td:last-child {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+
+  // liked songs styles goes here
+
+  .like {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin: 1.1rem 0 1.6rem 0 ;
+  }
