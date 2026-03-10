@@ -45,16 +45,6 @@
     }
 
 
-    #friends {
-        display: none;
-    }
-    
-
-    body:has(#friends:checked) .friends-aside {
-        display: block;
-        
-    }
-
     .main-aside {
         display: flex;
         flex-direction: row-reverse; 
