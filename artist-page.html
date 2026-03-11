@@ -307,263 +307,231 @@
                 <div class="top-tracks">
                     <section class="tracks-section">
                     <h2 class="section-title">Your most played</h2>
-                    <ol class="track-list">
-                        <li class="track-item">
-                            <span class="secondary-text">1</span>
-                            <img src="./assets/artist-page/track-1.svg" alt="Album cover for One More Time">
-                            <div class="track-info">
-                                <h3 class="music-list-title">One More Time</h3>
-                                <p class="secondary-text">Daft Punk</p>
-                            </div>
-                            <span class="track-placeholder"></span>
-                            <span class="secondary-text">5:20</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>
+                            <table class="track-list">
+                                <colgroup>
+                                    <col class="col-number">
+                                    <col class="col-title">
+                                    <col class="col-album">
+                                    <col class="col-duration">
+                                    <col class="col-like">
+                                </colgroup>
+                                <thead>
+                                </thead>
+                                <tbody>
+                                    <tr class="track-item">
+                                        <td class="secondary-text">1</td>
+                                        <td class="track-title">
+                                            <img src="./assets/artist-page/track-1.svg" alt="Album cover for One More Time">
+                                            <div class="track-info">
+                                                <h3 class="music-list-title">One More Time</h3>
+                                                <p class="secondary-text">Daft Punk</p>
+                                            </div>
+                                        </td>
+                                        <td class="secondary-text"></td>
+                                        <td class="secondary-text">5:20</td>
+                                        <td>
+                                            <button class="icon-btn">
+                                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                        </tr>
 
-                        <li class="track-item">
-                            <span class="secondary-text">2</span>
-                            <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for get lucky">
-                            <div class="track-info">
-                                <h3 class="music-list-title">Get Lucky</h3>
-                                <p class="secondary-text">Daft Punk</p>
-                            </div>
-                            <span class="track-placeholder"></span>
-                            <span class="secondary-text">4:35</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>
-                        
-                        <li class="track-item">
-                            <span class="secondary-text">3</span>
-                            <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Give Life Back to Music">
-                            <div class="track-info">
-                                <h3 class="music-list-title">Give Life Back to Music</h3>
-                                <p class="secondary-text">Daft Punk</p>
-                            </div>
-                            <span class="track-placeholder"></span>
-                            <span class="secondary-text">4:35</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>
+                                        <tr class="track-item">
+                                            <td class="secondary-text">2</td>
+                                            <td class="track-title">
+                                                <img src="./assets/player-bar/Album Cover.svg" alt="album-cover-for-get-lucky">
+                                                <div class="track-info">
+                                                    <h3 class="music-list-title">Get Lucky</h3>
+                                                    <p class="secondary-text">Daft Punk</p>
+                                                </div>
+                                            </td>
+                                            <td class="secondary-text"></td>
+                                            <td class="secondary-text">4:35</td>
+                                            <td>
+                                                <button class="icon-btn">
+                                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                            </tr>
+                                            <tr class="track-item">
+                                            <td class="secondary-text">3</td>
+                                            <td class="track-title">
+                                                <img src="./assets/player-bar/Album Cover.svg" alt="album-cover-for-give-life">
+                                                <div class="track-info">
+                                                    <h3 class="music-list-title">Give Life Back to Music</h3>
+                                                    <p class="secondary-text">Daft Punk</p>
+                                                </div>
+                                            </td>
+                                            <td class="secondary-text"></td>
+                                            <td class="secondary-text">4:35</td>
+                                            <td>
+                                                <button class="icon-btn">
+                                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                            </tr>
+                                            <tr class="track-item">
+                                            <td class="secondary-text">4</td>
+                                            <td class="track-title">
+                                                <img src="./assets/player-bar/Album Cover.svg" alt="album-cover-for-instant-crush">
+                                                <div class="track-info">
+                                                    <h3 class="music-list-title">Instant Crush</h3>
+                                                    <p class="secondary-text">Daft Punk, Julian Casablancas</p>
+                                                </div>
+                                            </td>
+                                            <td class="secondary-text"></td>
+                                            <td class="secondary-text">5:37</td>
+                                            <td>
+                                                <button class="icon-btn">
+                                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                            <tr class="track-item">
+                                            <td class="secondary-text">5</td>
+                                            <td class="track-title">
+                                                <img src="./assets/player-bar/Album Cover.svg" alt="album-cover-for-around-the-world">
+                                                <div class="track-info">
+                                                    <h3 class="music-list-title">Around the world</h3>
+                                                    <p class="secondary-text">Daft Punk</p>
+                                                </div>
+                                            </td>
+                                            <td class="secondary-text"></td>
+                                            <td class="secondary-text">4:35</td>
+                                            <td>
+                                                <button class="icon-btn">
+                                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                                
+                        <section class="tracks-section">
+                            <h2 class="section-title">Popular</h2>
+                                <table class="track-list">
+                                <colgroup>
+                                    <col class="col-number">
+                                    <col class="col-title">
+                                    <col class="col-album">
+                                    <col class="col-duration">
+                                    <col class="col-like">
+                                </colgroup>
+                                <thead>
+                                </thead>
+                                <tbody>
+                                    <tr class="track-item">
+                                        <td class="secondary-text">1</td>
+                                        <td class="track-title">
+                                            <img src="./assets/player-bar/Album Cover.svg" alt="album-cover-for-get-lucky">
+                                            <div class="track-info">
+                                                <h3 class="music-list-title">Get Lucky</h3>
+                                                <p class="secondary-text">Daft Punk</p>
+                                            </div>
+                                        </td>
+                                        <td class="secondary-text">1,064,097,461</td>
+                                        <td class="secondary-text">4:35</td>
+                                        <td>
+                                            <button class="icon-btn">
+                                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
 
-                        <li class="track-item">
-                            <span class="secondary-text">4</span>
-                            <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Instant Crush">
-                            <div class="track-info">
-                                <h3 class="music-list-title">Instant Crush</h3>
-                                <p class="secondary-text">Daft Punk, Julian Casablancas</p>
-                            </div>
-                            <span class="track-placeholder"></span>
-                            <span class="secondary-text">5:37</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>
-
-                        <li class="track-item">
-                            <span class="secondary-text">5</span>
-                            <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Around the world">
-                            <div class="track-info">
-                                <h3 class="music-list-title">Around the world</h3>
-                                <p class="secondary-text">Daft Punk</p>
-                            </div>
-                            <span class="track-placeholder"></span>
-                            <span class="secondary-text">4:35</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>                        
-                    </ol>
-                </section>    
-                <section class="tracks-section">
-                    <h2 class="section-title">Popular</h2>
-                    <ol class="track-list">
-                        <li class="track-item">
-                            <span class="secondary-text">1</span>
-                            <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for get lucky">
-                            <div class="track-info">
-                                <h3 class="music-list-title">Get lucky</h3>
-                                <p class="secondary-text">Daft Punk</p>
-                            </div>
-                            <span class="secondary-text">1,064,097,461</span>
-                            <span class="secondary-text">4:35</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>
-
-                        <li class="track-item">
-                            <span class="secondary-text">2</span>
-                            <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Instant Crush">
-                            <div class="track-info">
-                                <h3 class="music-list-title">Instant Crush</h3>
-                                <p class="secondary-text">Daft Punk, Julian Casablancas</p>
-                            </div>
-                            <span class="secondary-text">598,754,929</span>
-                            <span class="secondary-text">5:37</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>
-                        
-                        <li class="track-item">
-                            <span class="secondary-text">3</span>
-                            <img src="./assets/artist-page/track-1.svg" alt="Album cover for One More Time">
-                            <div class="track-info">
-                                <h3 class="music-list-title">One More Time</h3>
-                                <p class="secondary-text">Daft Punk</p>
-                            </div>
-                            <span class="secondary-text">578,637,618</span>
-                            <span class="secondary-text">5:20</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>
-
-                        <li class="track-item">
-                            <span class="secondary-text">4</span>
-                            <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Give Life Back to Music">
-                            <div class="track-info">
-                                <h3 class="music-list-title">Give Life Back to Music</h3>
-                                <p class="secondary-text">Daft Punk</p>
-                            </div>
-                            <span class="secondary-text">490,307,607</span>
-                            <span class="secondary-text">4:35</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>
-
-                        <li class="track-item">
-                            <span class="secondary-text">5</span>
-                            <img src="./assets/player-bar/Album Cover.svg" alt="Album cover for Around the world">
-                            <div class="track-info">
-                                <h3 class="music-list-title">Around the world</h3>
-                                <p class="secondary-text">Daft Punk</p>
-                            </div>
-                            <span class="secondary-text">366,613,346</span>
-                            <span class="secondary-text">4:35</span>
-                            <div class="buttons">
-                            <button class="icon-btn">
-                                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                            <div class="buttons">
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            <button class="track-placeholder-icon"></button>
-                            </div>
-                        </li>
-                    </ol>
+                                    <tr class="track-item">
+                                            <td class="secondary-text">2</td>
+                                            <td class="track-title">
+                                                <img src="./assets/player-bar/Album Cover.svg" alt="album-cover-for-instant-crush">
+                                                <div class="track-info">
+                                                    <h3 class="music-list-title">Instant Crush</h3>
+                                                    <p class="secondary-text">Daft Punk, Julian Casablancas</p>
+                                                </div>
+                                            </td>
+                                            <td class="secondary-text">598,754,929</td>
+                                            <td class="secondary-text">5:37</td>
+                                            <td>
+                                                <button class="icon-btn">
+                                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                            <tr class="track-item">
+                                            <td class="secondary-text">3</td>
+                                            <td class="track-title">
+                                                <img src="./assets/artist-page/track-1.svg" alt="album-cover-for-one-more-time">
+                                                <div class="track-info">
+                                                    <h3 class="music-list-title">One More Time</h3>
+                                                    <p class="secondary-text">Daft Punk</p>
+                                                </div>
+                                            </td>
+                                            <td class="secondary-text">578,637,618</td>
+                                            <td class="secondary-text">5:20</td>
+                                            <td>
+                                                <button class="icon-btn">
+                                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                            <tr class="track-item">
+                                            <td class="secondary-text">4</td>
+                                            <td class="track-title">
+                                                <img src="./assets/player-bar/Album Cover.svg" alt="album-cover-for-give-life">
+                                                <div class="track-info">
+                                                    <h3 class="music-list-title">Give Life Back to Music</h3>
+                                                    <p class="secondary-text">Daft Punk</p>
+                                                </div>
+                                            </td>
+                                            <td class="secondary-text">490,307,607</td>
+                                            <td class="secondary-text">4:35</td>
+                                            <td>
+                                                <button class="icon-btn">
+                                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                            </tr>
+                                            <tr class="track-item">
+                                            <td class="secondary-text">5</td>
+                                            <td class="track-title">
+                                                <img src="./assets/player-bar/Album Cover.svg" alt="album-cover-for-around-the-world">
+                                                <div class="track-info">
+                                                    <h3 class="music-list-title">Around the world</h3>
+                                                    <p class="secondary-text">Daft Punk</p>
+                                                </div>
+                                            </td>
+                                            <td class="secondary-text">366,613,346</td>
+                                            <td class="secondary-text">4:35</td>
+                                            <td>
+                                                <button class="icon-btn">
+                                                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.1337 2.36517L11.2699 4.17112L9.40606 2.36518C7.45169 0.471504 4.31654 0.57606 2.49269 2.59574C0.722922 4.55551 0.479272 7.49092 2.08184 9.58963C2.27877 9.84753 2.47241 10.0945 2.65668 10.3206C3.82313 11.7515 6.36813 14.2505 7.64327 15.5916C8.58536 16.5824 9.43219 17.4087 10.0702 18.0106C10.7439 18.6462 11.7838 18.6323 12.4588 17.9981C13.6352 16.8927 15.4391 15.171 16.7098 13.8346C17.9849 12.4935 18.7166 11.7515 19.8831 10.3206C20.0674 10.0945 20.261 9.84753 20.4579 9.58963C22.0605 7.49092 21.8168 4.55551 20.0471 2.59574C18.2232 0.57606 15.0881 0.471502 13.1337 2.36517Z" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                 </section>
             </div>
+
             <aside class="artist-pick">
                 <div class="artist-pick-section">
                     <h2 class="section-title">Artist Pick</h2>
@@ -602,15 +570,15 @@
                 </div>
             </div>
             <div class="artist-about-text">
-            <p>As they evolved from '90s French house pioneers to 2000s dance tastemakers to mainstream heroes in the 2010s, Daft Punk remained one of dance music's most iconic acts. With their early singles and 1997's instant-classic debut album Homework, Guy-Manuel de Homem-Christo and Thomas Bangalter quickly won acclaim for their skill at blending their beloved Chicago house and Detroit techno with pop, funk, indie rock, and hip-hop into nostalgic yet futuristic forms. Not content to just widen electronic music's popularity, on 2001's Discovery they reinvented the then-unfashionable sounds of mid-'80s soft rock and R&B into stylish tracks that also had a childlike wonder. Despite their sizable popularity, Daft Punk were never afraid to challenge their listeners, which they did with 2005's cold and dystopic Human After All. Even when they polarized their audience, there was never any doubt that they staged groundbreaking concerts, and the tour captured on Alive 2007 helped pave the way for arena-sized EDM, particularly in the U.S. With 2013's Random Access Memories, the duo once again looked to the past to create the future, borrowing from prog, disco, and a laid-back West Coast vibe that bucked the predominant trends in electronic music but still resonated with a wide audience. Daft Punk's influence reached further into the mainstream through collaborations with Kanye West and the Weeknd, and the duo's music was sampled by artists ranging from Missy Elliott to the Fall. Though they reinvented themselves continually, wherever Daft Punk went, the rest of pop music followed.
-                After meeting in 1987 as students at Paris' Lycée Carnot secondary school, Bangalter and de Homem-Christo became friends and soon started making music together. In 1992, they formed the band Darlin'. Named after a Beach Boys song, the group featured Bangalter on bass, de Homem-Christo on guitar, and additional guitarist Laurent Brancowitz. Darlin's career was brief: The trio recorded a cover of their namesake song that appeared, along with an original song, on a various artists EP released by Stereolab's label Duophonic (the band also invited Darlin' to play some U.K. shows with them). Following a Melody Maker review that described Darlin's music as "a daft punky thrash," the band broke up. Bangalter and de Homem-Christo began experimenting with electronic music, taking their new project's name from that review and drawing inspiration from pioneers such as Todd Edwards, Juan Atkins, Kraftwerk, Frankie Knuckles, and many more.
-                By September 1993, Daft Punk had readied a demo tape, which they gave to Soma co-founder Stuart MacMillan at a rave at EuroDisney. The label released the duo's debut single, "The New Wave," in April 1994. Instantly hailed by the dance music press as the work of a new breed of house innovators, it was followed by May 1995's "Da Funk," the band's first true hit (the record sold 30,000 copies worldwide and saw thorough rinsings by everyone from Kris Needs to the Chemical Brothers). In 1996, the buzz around Daft Punk led them to sign with Virgin, and the label released the single "Da Funk"/"Musique" that year. Recorded and mixed at the duo's Paris studio Daft House, January 1997's debut album Homework -- named for Daft Punk's D.I.Y. aesthetic -- was a critical and commercial success. The album reached number three in France and stayed on the chart for over a year, while the singles "Da Funk," "Around the World," "Burnin'," and "Revolution 909" charted in France, the U.K., the U.S., and Australia. The duo supported the record with the Daftendirekt tour, while the Homework video collection D.A.F.T.: A Story about Dogs, Androids, Firemen and Tomatoes followed in 1999 and featured clips directed by Roman Coppola, Michel Gondry, and Spike Jonze.
-                To follow their breakthrough debut album, de Homem-Christo and Bangalter reached back to their childhoods in the '70s and '80s and sought to fuse technology with humanity. Once again recorded at Daft House, March 2001's Discovery incorporated disco and synth pop as well as house, garage, and R&B into a sleek, retro-futuristic sound that matched the robotic helmets and gloves the duo introduced with the release of the album. Featuring contributions from heroes such as Romanthony, Edwards, and DJ Sneak, Discovery was an even bigger hit than its predecessor. The album peaked at number two in France and the U.K., while the singles "One More Time," "Digital Love," "Harder, Faster, Better, Stronger," and "Face to Face" also charted in the U.K. and the U.S. That November saw the release of Alive 1997, an edit of the duo's Birmingham, England stop on the Daftendirekt tour. Daft Punk capped the Discovery era in 2003 with Interstella 5555: The 5tory of the 5ecret 5tar 5ystem, an animated film they produced with anime and manga creator Leiji Matsumoto that used the album as its soundtrack.
-                For Daft Punk's third album, the duo took a drastically different approach. Created in six weeks -- as opposed to the two years they spent making Discovery -- with a handful of gear that included an eight-track machine, March 2005's Human After All was a deliberately raw, stark set of songs inspired by George Orwell's Nineteen Eighty-Four. Though its cold, repetitive feel drew polarized reactions, the album fared well commercially: Human After All reached number three in France, was a Top Ten hit in the U.K., and hit number one on the Billboard Top Dance/Electronic Albums chart in the U.S. The set was also nominated for Best Electronic/Dance Album at the 2006 Grammy Awards. Shortly after its release, Human After All [Remixes] collected reworkings by Soulwax, Digitalism, and Erol Alkan among others.
+            <p>As they evolved from '90s French house pioneers to 2000s dance tastemakers to mainstream heroes in the 2010s, Daft Punk remained one of dance music's most iconic acts. With their early singles and 1997's instant-classic debut album Homework, Guy-Manuel de Homem-Christo and Thomas Bangalter quickly won acclaim for their skill at blending their beloved Chicago house and Detroit techno with pop, funk, indie rock, and hip-hop into nostalgic yet futuristic forms. Not content to just widen electronic music's popularity, on 2001's Discovery they reinvented the then-unfashionable sounds of mid-'80s soft rock and R&B into stylish tracks that also had a childlike wonder. Despite their sizable popularity, Daft Punk were never afraid to challenge their listeners, which they did with 2005's cold and dystopic Human After All. Even when they polarized their audience, there was never any doubt that they staged groundbreaking concerts, and the tour captured on Alive 2007 helped pave the way for arena-sized EDM, particularly in the U.S. With 2013's Random Access Memories, the duo once again looked to the past to create the future, borrowing from prog, disco, and a laid-back West Coast vibe that bucked the predominant trends in electronic music but still resonated with a wide audience. Daft Punk's influence reached further into the mainstream through collaborations with Kanye West and the Weeknd, and the duo's music was sampled by artists ranging from Missy Elliott to the Fall. Though they reinvented themselves continually, wherever Daft Punk went, the rest of pop music followed.
+                After meeting in 1987 as students at Paris' Lycée Carnot secondary school, Bangalter and de Homem-Christo became friends and soon started making music together. In 1992, they formed the band Darlin'. Named after a Beach Boys song, the group featured Bangalter on bass, de Homem-Christo on guitar, and additional guitarist Laurent Brancowitz. Darlin's career was brief: The trio recorded a cover of their namesake song that appeared, along with an original song, on a various artists EP released by Stereolab's label Duophonic (the band also invited Darlin' to play some U.K. shows with them). Following a Melody Maker review that described Darlin's music as "a daft punky thrash," the band broke up. Bangalter and de Homem-Christo began experimenting with electronic music, taking their new project's name from that review and drawing inspiration from pioneers such as Todd Edwards, Juan Atkins, Kraftwerk, Frankie Knuckles, and many more.
+                By September 1993, Daft Punk had readied a demo tape, which they gave to Soma co-founder Stuart MacMillan at a rave at EuroDisney. The label released the duo's debut single, "The New Wave," in April 1994. Instantly hailed by the dance music press as the work of a new breed of house innovators, it was followed by May 1995's "Da Funk," the band's first true hit (the record sold 30,000 copies worldwide and saw thorough rinsings by everyone from Kris Needs to the Chemical Brothers). In 1996, the buzz around Daft Punk led them to sign with Virgin, and the label released the single "Da Funk"/"Musique" that year. Recorded and mixed at the duo's Paris studio Daft House, January 1997's debut album Homework -- named for Daft Punk's D.I.Y. aesthetic -- was a critical and commercial success. The album reached number three in France and stayed on the chart for over a year, while the singles "Da Funk," "Around the World," "Burnin'," and "Revolution 909" charted in France, the U.K., the U.S., and Australia. The duo supported the record with the Daftendirekt tour, while the Homework video collection D.A.F.T.: A Story about Dogs, Androids, Firemen and Tomatoes followed in 1999 and featured clips directed by Roman Coppola, Michel Gondry, and Spike Jonze.
+                To follow their breakthrough debut album, de Homem-Christo and Bangalter reached back to their childhoods in the '70s and '80s and sought to fuse technology with humanity. Once again recorded at Daft House, March 2001's Discovery incorporated disco and synth pop as well as house, garage, and R&B into a sleek, retro-futuristic sound that matched the robotic helmets and gloves the duo introduced with the release of the album. Featuring contributions from heroes such as Romanthony, Edwards, and DJ Sneak, Discovery was an even bigger hit than its predecessor. The album peaked at number two in France and the U.K., while the singles "One More Time," "Digital Love," "Harder, Faster, Better, Stronger," and "Face to Face" also charted in the U.K. and the U.S. That November saw the release of Alive 1997, an edit of the duo's Birmingham, England stop on the Daftendirekt tour. Daft Punk capped the Discovery era in 2003 with Interstella 5555: The 5tory of the 5ecret 5tar 5ystem, an animated film they produced with anime and manga creator Leiji Matsumoto that used the album as its soundtrack.
+                For Daft Punk's third album, the duo took a drastically different approach. Created in six weeks -- as opposed to the two years they spent making Discovery -- with a handful of gear that included an eight-track machine, March 2005's Human After All was a deliberately raw, stark set of songs inspired by George Orwell's Nineteen Eighty-Four. Though its cold, repetitive feel drew polarized reactions, the album fared well commercially: Human After All reached number three in France, was a Top Ten hit in the U.K., and hit number one on the Billboard Top Dance/Electronic Albums chart in the U.S. The set was also nominated for Best Electronic/Dance Album at the 2006 Grammy Awards. Shortly after its release, Human After All [Remixes] collected reworkings by Soulwax, Digitalism, and Erol Alkan among others.
                 April 2006 saw the arrival of Musique, Vol. 1: 1993-2005, a compilation of the duo's best-known songs and remixes accompanied by the videos for Human After All's singles. That May, Daft Punk premiered their film Electroma at the Director's Fortnight at that year's Cannes Film Festival. An experimental sci-fi film about a pair of robots seeking to become human, it began as the video for Human After All's title track before expanding into a feature film (unlike Interstella 5555, the movie did not feature any of Daft Punk's music). Initially earning mixed reviews, over time Electroma won a cult audience. That year, the duo embarked on the Alive tour, which lasted through 2007 and featured some of Daft Punk's most ambitiously staged live sets. Appearing in November 2007, Alive 2007 documented the tour. Early in 2009, the album and its single "Harder, Better, Faster, Stronger" won Grammy Awards.
-                Daft Punk returned with new music in November 2010 in the form of the score to Joseph Kosinski's feature film Tron: Legacy. A collaboration with Joseph Trapanese, who arranged and orchestrated the pair's compositions, it featured an 85-piece orchestra as well as Daft Punk's signature electronics. Bangalter and de Homem-Christo also appeared in the film in a brief cameo. The soundtrack eventually reached number four on the Billboard 200 Albums chart in the U.S. and was nominated for a Best Score Soundtrack Album for Visual Media Grammy Award. Also in 2010, the duo were admitted into the Ordre des Arts et des Lettres, with de Homem-Christo and Bangalter each receiving the rank of Chevalier. The following year saw the April release of the remix album Tron: Legacy Reconfigured, while that September's compilation Soma Records: 20 Years featured the track "Drive," an early recording that was believed to be lost.
-                For their fourth album, Daft Punk once again took a different creative tack. Seeking a breezy feel informed by Fleetwood Mac, the Eagles, and Jean Michel Jarre, the duo emphasized live instrumentation and collaborated with artists including Nile Rodgers, Paul Williams, Giorgio Moroder, and Panda Bear. Pharrell Williams appeared on the single "Get Lucky," which preceded the release of the full-length Random Access Memories in May 2013. Recorded in California, New York City, and Paris and spanning disco, prog, and indie influences, the album became one of Daft Punk's biggest successes. It topped the charts in over 20 countries including the U.S., where it became the duo's first number one album and was eventually certified platinum. It also won Grammy Awards for Best Dance/Electronica Album, Album of the Year, and Best Engineered Album, Non-Classical. "Get Lucky" hit number one in over 30 countries and earned Grammys for Best Pop Duo/Group Performance and Record of the Year. That year, Daft Punk also co-produced Kanye West's critically acclaimed album Yeezus, and worked on tracks including the single "Black Skinhead." In 2014, the duo appeared on Pharrell's album G I R L and collaborated with Jay-Z on the song "Computerized." A 2015 documentary titled Daft Punk Unchained charted their history from the '90s into the 2010s, featuring interviews with Rodgers, Pharrell, and West, among others. In turn, the duo appeared in that year's Rodgers documentary Nile Rodgers: From Disco to Daft Punk.
-                During the latter half of the 2010s, Daft Punk remained active. They teamed up with the Weeknd's Abel Tesfaye on a pair of songs from his 2016 album Starboy, including the chart-topping title track. The following year, the duo performed with the Weeknd at the 59th Annual Grammy Awards; later in 2017, they co-wrote and produced Parcels' "Overnight." During this time, Daft Punk's members also worked on separate projects. Bangalter co-produced Arcade Fire's 2017 album Everything Now and contributed pieces to the soundtrack to Gaspar Noé's 2018 film Climax, while de Homem-Christo co-wrote and produced tracks for Charlotte Gainsbourg's 2017 album Rest and the Weeknd's 2018 EP My Dear Melancholy,. In 2019, Daft Punk were featured in the Philharmonie de Paris' exhibition Electro, which traced the history of electronic music and its influence on visual arts. In February 2021, the duo disbanded, spreading the news with a YouTube video that featured scenes from the end of Electroma. To commemorate the tenth anniversary of Random Access Memories in 2023, Daft Punk issued a pair of re-releases of the album. In May, a deluxe edition of the album featuring unreleased demos (including "Infinity Repeating," which featured Julian Casablancas & the Voidz), outtakes and the version of "Touch" that soundtracked the duo's breakup announcement appeared. The reissue topped the Billboard Dance/Electronic Albums Chart and reached the Top Ten of the Billboard 200 Albums Chart. That November saw the release of a drumless version of the album. ~ Heather Phares & Sean Cooper, Rovi
+                Daft Punk returned with new music in November 2010 in the form of the score to Joseph Kosinski's feature film Tron: Legacy. A collaboration with Joseph Trapanese, who arranged and orchestrated the pair's compositions, it featured an 85-piece orchestra as well as Daft Punk's signature electronics. Bangalter and de Homem-Christo also appeared in the film in a brief cameo. The soundtrack eventually reached number four on the Billboard 200 Albums chart in the U.S. and was nominated for a Best Score Soundtrack Album for Visual Media Grammy Award. Also in 2010, the duo were admitted into the Ordre des Arts et des Lettres, with de Homem-Christo and Bangalter each receiving the rank of Chevalier. The following year saw the April release of the remix album Tron: Legacy Reconfigured, while that September's compilation Soma Records: 20 Years featured the track "Drive," an early recording that was believed to be lost.
+                For their fourth album, Daft Punk once again took a different creative tack. Seeking a breezy feel informed by Fleetwood Mac, the Eagles, and Jean Michel Jarre, the duo emphasized live instrumentation and collaborated with artists including Nile Rodgers, Paul Williams, Giorgio Moroder, and Panda Bear. Pharrell Williams appeared on the single "Get Lucky," which preceded the release of the full-length Random Access Memories in May 2013. Recorded in California, New York City, and Paris and spanning disco, prog, and indie influences, the album became one of Daft Punk's biggest successes. It topped the charts in over 20 countries including the U.S., where it became the duo's first number one album and was eventually certified platinum. It also won Grammy Awards for Best Dance/Electronica Album, Album of the Year, and Best Engineered Album, Non-Classical. "Get Lucky" hit number one in over 30 countries and earned Grammys for Best Pop Duo/Group Performance and Record of the Year. That year, Daft Punk also co-produced Kanye West's critically acclaimed album Yeezus, and worked on tracks including the single "Black Skinhead." In 2014, the duo appeared on Pharrell's album G I R L and collaborated with Jay-Z on the song "Computerized." A 2015 documentary titled Daft Punk Unchained charted their history from the '90s into the 2010s, featuring interviews with Rodgers, Pharrell, and West, among others. In turn, the duo appeared in that year's Rodgers documentary Nile Rodgers: From Disco to Daft Punk.
+                During the latter half of the 2010s, Daft Punk remained active. They teamed up with the Weeknd's Abel Tesfaye on a pair of songs from his 2016 album Starboy, including the chart-topping title track. The following year, the duo performed with the Weeknd at the 59th Annual Grammy Awards; later in 2017, they co-wrote and produced Parcels' "Overnight." During this time, Daft Punk's members also worked on separate projects. Bangalter co-produced Arcade Fire's 2017 album Everything Now and contributed pieces to the soundtrack to Gaspar Noé's 2018 film Climax, while de Homem-Christo co-wrote and produced tracks for Charlotte Gainsbourg's 2017 album Rest and the Weeknd's 2018 EP My Dear Melancholy,. In 2019, Daft Punk were featured in the Philharmonie de Paris' exhibition Electro, which traced the history of electronic music and its influence on visual arts. In February 2021, the duo disbanded, spreading the news with a YouTube video that featured scenes from the end of Electroma. To commemorate the tenth anniversary of Random Access Memories in 2023, Daft Punk issued a pair of re-releases of the album. In May, a deluxe edition of the album featuring unreleased demos (including "Infinity Repeating," which featured Julian Casablancas & the Voidz), outtakes and the version of "Touch" that soundtracked the duo's breakup announcement appeared. The reissue topped the Billboard Dance/Electronic Albums Chart and reached the Top Ten of the Billboard 200 Albums Chart. That November saw the release of a drumless version of the album. ~ Heather Phares & Sean Cooper, Rovi
             </p>
             </div>
 
@@ -645,43 +613,1108 @@
                 <p>274,515 listeners</p>
             </div>
 
-                <!-- list layout albums -->
-                <div class="albums-list-view">
-                    <div class="album-row">
-                        <div class="recommendation-card wine">
-                        <div class="background-shadow"></div>
-                            <img src="./assets/artist-page/albums/Random-Access-Memories-(Drumless Edition).svg" class="album-cover-small" alt="Random Access Memories Album cover">
-                        </div>
-                        <div class="album-info">
-                        <div class="title-wrapper">
-                            <span class="card-title">Random Access Memories (Drumless Edition)</span>
-                            <span class="card-subtitle">22</span>
-                        </div>
-                        <p class="card-subtitle">2023</p>
-                        
-
-                        <div class="album-controls">
-                        <button class="icon-btn">▶</button>
-                        <button class="icon-btn">+</button>
-                        <button class="icon-btn">…</button>
-                        </div>
-                        </div>
-
-                        <button class="icon-btn album-arrow">
-                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.17912 11.2812L6.23047 6.2299L1.17912 1.17855" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </div>
-</div>
-
-                    
-                </section>
-        </section>  
-                
+            <div class="artist-stat">
+                <h4>Bogotá, CO</h4>
+                <p>251,175 listeners</p>
             </div>
-            </section>
-    </section>  
+            </aside>
+        </div>
+        </section>
+
+        <!--albums-->
+        <section class="artist-tab-content" id="panel-albums">
+            <!-- grid layout albums -->
+            <div class="albums-grid-view">
+                <figure class="recommendation-card grey">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/Random-Access-Memories-(Drumless Edition).svg" class="album-cover" alt="Random-Access-Memories-Album-cover">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">Random Access Memories (Drumless Edition)</span>
+                                <span class="card-subtitle">22</span>
+                            </div>
+                            <p class="card-subtitle">2023</p>
+                        </figcaption>
+                </figure>
+                <figure class="recommendation-card smokey-blue">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/Random-Access-Memories.svg" class="album-cover" alt="Random-Access-Memories">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">Random Access Memories</span>
+                                <span class="card-subtitle">22</span>
+                            </div>
+                            <p class="card-subtitle">2013</p>
+                        </figcaption>
+                </figure>
+                    <figure class="recommendation-card dark-green">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/TRON-Legacy-Reconfigured.svg" class="album-cover" alt="TRON-Legacy-Reconfigured">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">TRON Legacy Reconfigured</span>
+                                <span class="card-subtitle">15</span>
+                            </div>
+                            <p class="card-subtitle">2010</p>   
+                        </figcaption>
+                </figure>
+                <figure class="recommendation-card midnight">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/TRON-Legacy.svg" class="album-cover" alt="TRON-Legacy">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">TRON Legacy</span>
+                                <span class="card-subtitle">22</span>
+                            </div>
+                            <p class="card-subtitle">2010</p>   
+                        </figcaption>
+                </figure>
+                <figure class="recommendation-card midnight-dark">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/alive.svg" class="album-cover" alt="alive-album-cover">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">Alive 2007</span>
+                                <span class="card-subtitle">13</span>
+                            </div>
+                            <p class="card-subtitle">2007</p>   
+                        </figcaption>
+                </figure>
+                <figure class="recommendation-card dark-taupe">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/Human-After-All.svg" class="album-cover" alt="Human-After-All">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">Human After All (Remixes)</span>
+                                <span class="card-subtitle">15</span>
+                            </div>
+                            <p class="card-subtitle">2006</p>   
+                        </figcaption>
+                </figure>
+                <figure class="recommendation-card dark-grey">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/Human-After-All-2.svg" class="album-cover" alt="Human-After-All">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">Human After All</span>
+                                <span class="card-subtitle">10</span>
+                            </div>
+                            <p class="card-subtitle">2005</p>   
+                        </figcaption>
+                </figure>
+                <figure class="recommendation-card brown">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/Daft-Club.svg" class="album-cover" alt="Daft-Club">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">Daft Club</span>
+                                <span class="card-subtitle">14</span>
+                            </div>
+                            <p class="card-subtitle">2003</p>   
+                        </figcaption>
+                </figure>
+                <figure class="recommendation-card graphite">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/Alive-1997.svg" class="album-cover" alt="Alive-1997">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">Alive 1997</span>
+                                <span class="card-subtitle">1</span>
+                            </div>
+                            <p class="card-subtitle">2001</p>   
+                        </figcaption>
+                </figure>
+                <figure class="recommendation-card charcoal">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/discovery-14.svg" class="album-cover" alt="discovery-14">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">Discovery</span>
+                                <span class="card-subtitle">14</span>
+                            </div>
+                            <p class="card-subtitle">2001</p>   
+                        </figcaption>
+                </figure>
+                <figure class="recommendation-card wine">
+                    <div class="background-shadow"></div>
+                    <img src="./assets/artist-page/albums/homework.svg" class="album-cover" alt="homework">
+                        <figcaption class="description">
+                            <div class="title-wrapper">
+                                <span class="card-title">Homework</span>
+                                <span class="card-subtitle">16</span>
+                            </div>
+                            <p class="card-subtitle">1997</p>   
+                        </figcaption>
+                </figure>
+            </div>
+
+        <!--list album-->
+            <div class="albums-list-view">
+            <ol class="album-list">
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card grey">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/Random-Access-Memories-(Drumless Edition).svg" class="album-row-cover" alt="Random-Access-Memories-Album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Random Access Memories</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2023</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">22 songs</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card smokey-blue">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/Random-Access-Memories.svg" class="album-row-cover" alt="Random-Access-Memories-Album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Random Access Memories (10th Anniversary Edition)</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2013</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">22 songs</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card dark-green">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/Random-Access-Memories-2.svg" class="album-row-cover" alt="Random-Access-Memories-Album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Random Access Memories</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2013</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">13 songs</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card midnight">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/TRON-Legacy-Reconfigured.svg" class="album-row-cover" alt="TRON-Legacy-Reconfigured-album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">TRON: Legacy Reconfigured</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2011</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">15 songs</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card midnight-dark">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/TRON-Legacy.svg" class="album-row-cover" alt="TRON-Legacy-album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">TRON: Legacy</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2010</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">22 songs</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card dark-taupe">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/alive.svg" class="album-row-cover" alt="alive-album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Alive 2007</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2007</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">13 songs</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card dark-grey">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/Human-After-All.svg" class="album-row-cover" alt="Human-After-All-remixes-album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Human After All (Remixes)</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2006</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">13 songs</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card brown">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/Human-After-All-2.svg" class="album-row-cover" alt="Human-After-All-album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Human After All</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2005</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">10 songs</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card graphite">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/Daft-Club.svg" class="album-row-cover" alt="Daft-Club-album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Daft Club</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2003</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">14 songs</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card charcoal">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/Alive-1997.svg" class="album-row-cover" alt="Alive-1997-album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Alive 1997</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">2001</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 song</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card wine">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/discovery-14.svg" class="album-row-cover" alt="discovery-album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Discovery</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">1997</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">14 song</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+
+                <li class="list-album-row">
+                <div class="list-album-row-content">
+                    <div class="recommendation-card khaki">
+                        <div class="background-shadow"></div>
+                        <img src="./assets/artist-page/albums/homework.svg" class="album-row-cover" alt="homework-album-cover">
+                    </div>
+                    <div class="album-row-content">
+                        <h3 class="section-title">Homework</h3>
+                        <ul class="album-row-meta">
+                            <li class="secondary-text">1997</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">16 song</li>
+                            <li class="dot"></li>
+                            <li class="secondary-text">1 hr 14 min</li>
+                        </ul>
+                        <div class="album-row-actions">
+                            <button class="icon-btn">
+                                <img src="./assets/discover-page/pause.svg" alt="pause">
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_10250_9618)">
+                                <path d="M5.05078 7.57728C6.63041 7.57728 8.1073 8.36035 8.99367 9.66786L9.8293 10.9005L10.9557 12.5622M23.6972 20.8702H18.7722C17.4519 20.8702 16.184 20.3533 15.2401 19.43L14.3116 18.5218M23.6972 20.8702L20.2049 24.415M23.6972 20.8702L20.2049 17.3254" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.05078 22.8995C6.63433 22.8995 8.1189 22.1292 9.03064 20.8345L15.2035 12.0687C16.1496 10.725 17.6902 9.92567 19.3336 9.92567H23.6971M23.6971 9.92567L20.2048 6.38086M23.6971 9.92567L20.2048 13.4705" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_10250_9618">
+                                <rect width="21.8892" height="23.573" fill="white" transform="translate(3.36719 3.36768)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </button>
+                            
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3986 10.0854H10.0859M5.77328 10.0854H10.0859M10.0859 10.0854L10.0859 5.77271M10.0859 10.0854V14.398" stroke="currentColor" stroke-width="1.68378" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.3622 11.7866H14.5915C13.0416 11.7866 11.7852 13.043 11.7852 14.5929C11.7852 16.1428 13.0416 17.3992 14.5915 17.3992H19.3622" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round"/>
+                                <path d="M11.7852 23.0117L28.623 23.0117" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7852 28.6245L28.623 28.6245" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M23.5723 14.3123H26.0979M28.6236 14.3123H26.0979M26.0979 14.3123V11.7866M26.0979 14.3123V16.838" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1031 5.05127V14.9134M10.1031 14.9134L13.4707 11.5459M10.1031 14.9134L6.73557 11.5459" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="10.1027" cy="10.1027" r="9.26081" stroke="currentColor" stroke-width="1.68378"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.2718 13.5978L12.2718 2.32163M12.2718 2.32163L7.62863 6.96474M12.2718 2.32163L16.9149 6.96474M20.563 11.9395V16.5826C20.563 18.048 19.3751 19.2358 17.9098 19.2358L6.63368 19.2358C5.16835 19.2358 3.98047 18.048 3.98047 16.5826L3.98047 11.9395" stroke="currentColor" stroke-width="2.02054" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <button class="icon-btn icon-interactive">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="3.36738" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="11.7873" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                <circle cx="20.2053" cy="11.7866" r="1.68378" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="icon-btn">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.73576 13.4702L11.7871 8.41886L6.73576 3.36751" stroke="currentColor" stroke-width="2.3573" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </li>
+            
+            </ol>
+        </div>
+    </section>
             
     <!-- Player bar -->
     <section class="player-bar">
