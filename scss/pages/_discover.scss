@@ -53,6 +53,7 @@
 
 .details {
     @include m.flex;
+    align-items: flex-end;
     color: v.$text-secondary;
     gap: 1rem;
 
