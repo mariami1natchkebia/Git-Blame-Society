@@ -2,7 +2,7 @@
 @use "../abstracts/variables" as v;
 
 
-// aside styles
+// friends aside styles
 
 .friends-aside{
     display: none;
@@ -13,15 +13,16 @@
     width: 35.8rem;
 }
 
-#friends {
+#friends, #account {
     display: none;
 }
 
 
 body:has(#friends:checked) .friends-aside {
     display: block;
-    
 }
+
+
 
 .aside-filter {
     display: flex;
@@ -45,4 +46,49 @@ body:has(#friends:checked) .friends-aside {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+}
+
+
+// styles for account aside section
+
+
+body:has(#account:checked) .account-aside {
+    display: block;
+}
+
+
+.account-aside{
+    display: none;
+    border-radius: 1rem;
+    border: 0.1rem solid v.$bg-secondary;
+    padding:2rem;
+    margin-bottom:0.5rem;
+    width: 35.8rem;
+
+}
+
+.account-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem;
+    border: 0.2rem solid rgba(#FFFFFF, 0.05);
+    border-radius: 1.2rem;
+    background: linear-gradient(180deg, rgba(138, 53, 74, 0.47) 0%, rgba(17, 17, 17, 1) 92%);
+}
+
+.your-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-share{
+    display: flex;
+    gap: 0.7rem;
+}
+
+.about-you{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
