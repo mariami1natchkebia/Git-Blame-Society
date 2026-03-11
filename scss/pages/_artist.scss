@@ -216,3 +216,26 @@
   }
 }
 }
+
+.artist-content-main {
+  display: flex;
+  gap: 4rem;
+
+   table{
+    width: auto;  
+  }
+
+}
+
+.top-tracks {
+  flex: 1;
+  min-width: 0;
+}
+
+.artist-pick {
+  width: 32rem;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
