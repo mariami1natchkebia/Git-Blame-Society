@@ -1,0 +1,48 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+
+// aside styles
+
+.friends-aside{
+    display: none;
+    border-radius: 1rem;
+    border: 0.1rem solid v.$bg-secondary;
+    padding:2rem;
+    margin-bottom:0.5rem;
+    width: 35.8rem;
+}
+
+#friends {
+    display: none;
+}
+
+
+body:has(#friends:checked) .friends-aside {
+    display: block;
+    
+}
+
+.aside-filter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:1.6rem;
+}
+
+.friends-action {
+    display: flex;
+    gap:1rem;
+}
+
+.friend-listening {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.friend-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}

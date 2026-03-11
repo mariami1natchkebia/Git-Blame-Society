@@ -40,6 +40,17 @@
     aside{
         width:v.$sidebar-width;
         @media (max-width:v.$bp-desktop){
-            display: none;
+            // display: none;
         }
+    }
+
+
+    .main-aside {
+        display: flex;
+        flex-direction: row-reverse; 
+        gap: 0.5rem;
+    }
+
+    .main-content {
+        flex: 1; 
     }
