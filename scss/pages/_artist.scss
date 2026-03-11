@@ -78,7 +78,7 @@
 
 .artist-navigation {
   background-color: v.$bg-main;
-  padding: 1rem 0 1rem 4.6rem;
+  padding: 1rem 1rem 1rem 4.6rem;
   border-bottom: 1px solid rgba(137, 137, 137, 0.2);
   @include m.flex($justify:space-between);
 
@@ -215,4 +215,26 @@
     color:v.$bg-main;
   }
 }
+}
+
+.artist-content-main {
+  display: flex;
+  gap: 4rem;
+
+   table{
+    width: auto;  
+  }
+
+}
+
+.top-tracks {
+  flex: 1;
+  min-width: 0;
+}
+
+.artist-pick {
+  @include m.flex($direction:column,$justify:flex-start);
+  width: 32rem;
+  flex-shrink: 0;
+  gap: 3rem;
 }
