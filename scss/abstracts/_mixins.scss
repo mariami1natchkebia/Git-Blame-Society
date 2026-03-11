@@ -25,7 +25,7 @@
   width: 19.6rem;
     &:active {
       background-color:v.$bg-primary;
-      color: v.$text-primary;
+      color:v.$text-primary;
       font-weight: map.get(v.$font-weight,bold);
       transition: 0.3s;
     }

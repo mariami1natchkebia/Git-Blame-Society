@@ -1,10 +1,6 @@
 @use "../abstracts/mixins" as m;
 @use "../abstracts/variables" as v;
 
-.navigation-button {
-    @include m.nav-button;
-  } 
-
 .icon-btn {
     color:v.$text-secondary;
     width: clamp(3.2rem, 2.6vw, 3.802rem);
