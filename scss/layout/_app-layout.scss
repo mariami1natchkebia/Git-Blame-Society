@@ -29,6 +29,10 @@
         overflow-x: hidden;
         max-height: calc(100vh - 16rem);
         scrollbar-width: none; 
+        @media (max-width:v.$bp-desktop){
+            border:none;
+            padding-inline:1.5rem;
+        }
     }
 
     footer {
