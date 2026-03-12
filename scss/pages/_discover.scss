@@ -96,3 +96,32 @@
     font-size: map.get(v.$font-size, caption);
 
 }
+
+.small-image {
+    width: 4.3rem;
+    height: 4.3rem;
+}
+
+.album-play {
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 0;
+}
+
+.play-album {
+    display: none;
+    @media (max-width:v.$bp-desktop){
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+            row-gap: 1rem;
+            margin-top: 1rem;
+        }
+}
+
+.mobile {
+    gap: 1rem;
+}
+
+.start-listening {
+    margin: 0;
+}
