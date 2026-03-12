@@ -65,11 +65,11 @@
 //album grid view//
 .albums-grid-view {
   .description,
-  .title-wrapper {
+  .album-title-wrapper {
     min-width: 0;
   }
 
-  .title-wrapper{
+  .album-title-wrapper{
     gap:3.3rem;
   }
 
@@ -109,7 +109,7 @@
   min-width: 0;
 }
 
-.title-wrapper {
+.album-title-wrapper {
   min-width: 0;
   @include m.flex($justify: flex-start, $align: center);
   gap: 0.6rem;
@@ -123,4 +123,4 @@
 .album-arrow {
   background: transparent;
   border: none;
-}
+} 

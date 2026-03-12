@@ -2,7 +2,6 @@
 @use "../abstracts/variables" as v;
 
 
-
 // Home Filter
 
 .filter-section {
@@ -41,11 +40,12 @@ gap: 1rem;
     right: 2rem;
     display: none;
     z-index: 10;
+
+    svg:active {
+    color: v.$primary-accent;
+    }
 }
 
-svg:active {
-    color: v.$primary-accent;
-}
 
 .customize {
     display: flex;
@@ -58,10 +58,6 @@ svg:active {
                 font-size: 1.4rem;
             }       
 }
-
-        svg:active {
-        color: v.$primary-accent;
-} 
 
 .select {
     display: flex;
