@@ -4,12 +4,16 @@
 
 
 .menu-navigation {
-    ul {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: auto;
-        @include m.flex;
-    }
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    @include m.flex;
+    // gap: 3rem;
+}
+
+.menu {
+    flex-direction: column;
+    width: auto;
 }
