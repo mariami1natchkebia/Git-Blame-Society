@@ -9,15 +9,11 @@
     border: none;
     cursor: pointer;
     @include m.flex();
+    &:hover{
+    color: v.$primary-accent;
+    }
 
     &.icon-active {
         background-color:v.$primary-accent;
     }
-    :active{
-        color:v.$nav-active-button;
-    }
-}
-
-.icon-interactive:hover {
-    color: v.$primary-accent;
 }

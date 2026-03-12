@@ -25,47 +25,47 @@
       color:v.$nav-active-button;
     }
 
-.track-check {
-  display: none;
-}
+  .track-check {
+    display: none;
+  }
 
-.check-btn {
-  position: relative;
-  width: 2.2rem;
-  height: 2.2rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color:v.$nav-active-button;
-}
+  .check-btn {
+    position: relative;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:v.$nav-active-button;
+  }
 
-.icon-unchecked,
-.icon-checked {
-  position: absolute;
-  transition: opacity 0.2s ease;
-}
+  .icon-unchecked,
+  .icon-checked {
+    position: absolute;
+    transition: opacity 0.2s ease;
+  }
 
-.icon-checked {
-  display:none;
-}
+  .icon-checked {
+    display:none;
+  }
 
-.track-check:checked + .check-btn .icon-unchecked {
-  display: none;
-}
+  .track-check:checked + .check-btn .icon-unchecked {
+    display: none;
+  }
 
-.track-check:checked + .check-btn .icon-checked {
-  display:block;
-}
+  .track-check:checked + .check-btn .icon-checked {
+    display:block;
+  }
 
-.check-btn {
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
+  .check-btn {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
 
-.track-item:hover .check-btn {
-  opacity: 1;
-}
+  .track-item:hover .check-btn {
+    opacity: 1;
+  }
 }
 
   .col-number {

@@ -10,14 +10,6 @@
 }
 
 .main-navigation {
-    .nav-row{
-        @include m.nav-button;
-  } 
-
-  .active {
-        color:v.$text-primary;
-    }
-       
         ul {
             display: flex;
             flex-direction: row;
@@ -31,17 +23,13 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        gap: 12px;
+        gap:1.2rem;
     }
         img {
             width: 2.4rem;
             height: 2.5rem;
             background-color: transparent;
         }
-            a {
-                color: v.$text-secondary;
-            }
-
 }
 
 .search:active {
@@ -52,4 +40,22 @@
     @media (max-width:v.$bp-desktop){
         display: none;
     }
+}
+
+//styles for navigation
+.nav-row, .nav-list, .library-header {
+    @include m.nav-button;
+    color: v.$text-secondary;
+    
+    &:hover {
+    color: v.$text-primary;
+  }
+    &:active {
+    color: v.$text-primary;
+  }
+}
+
+.nav-list-active {
+    @include m.nav-button;
+    color: v.$text-primary;
 }

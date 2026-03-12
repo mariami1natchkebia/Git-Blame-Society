@@ -25,16 +25,10 @@
   width: 19.6rem;
     &:active {
       background-color:v.$bg-primary;
-      color:v.$text-primary;
+      color: v.$text-primary;
       font-weight: map.get(v.$font-weight,bold);
       transition: 0.3s;
     }
-}
-// for mobile
-@mixin mobile {
-  @media (max-width: v.$bp-desktop) {
-    @content;
-  }
 }
 
 // filter chip
@@ -59,7 +53,6 @@
               background-color:v.$nav-active-button;
               color:#060606;
           }
-
 }
 
 @mixin flex($justify: center, $align: center, $direction: row) {

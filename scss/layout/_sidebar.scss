@@ -2,19 +2,28 @@
 @use "../abstracts/mixins" as m;
 @use "sass:map";
 
-.sidebar {
+.sidebar, .sidebar-active {
   padding-top: 0.6rem;
+  border-radius: 1rem;
   @media (max-width:v.$bp-desktop){
     display: none;
   }
 }
 
 .nav-row, .library-header {
-  @include m.nav-button;
-  display: flex;
-  align-items: center;
   gap: 1rem;
   width: 100%;
+  background-color: transparent;
+}
+
+.sidebar-active {
+  background-color: v.$bg-primary;
+
+  .nav-row, .library-header {
+    &:hover {
+      background-color: v.$bg-secondary;
+    }
+  }
 }
 
 .library-header {
@@ -26,10 +35,16 @@
 }
 
 .arrow {
+  color:v.$text-secondary;
+  width: clamp(3.2rem, 2.6vw, 3.802rem);
+  height: clamp(3.2rem, 2.6vw, 3.802rem);
+  cursor: pointer;
+  @include m.flex();
   margin-left: auto;
-  display: flex;
-  align-items: center;
   transition: transform 0.2s ease;
+  &:hover{
+    color:v.$text-primary;
+  }
 }
 
 .library-menu input {
@@ -42,15 +57,21 @@
 
 .submenu {
   display: none;
-  list-style: none;
-  margin: 0;
   padding: 0 0 0 3.2rem;
 }
 
 .library-menu input:checked + .nav-row + .submenu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap:0.8rem;
 }
 
 .library-menu input:checked + .nav-row .arrow {
   transform: rotate(90deg);
+  color:v.$text-primary;
+}
+
+.nav-row a,
+.library-header a {
+  color: inherit;
 }
