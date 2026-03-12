@@ -2,6 +2,15 @@
 @use "../abstracts/mixins" as m;
 @use "sass:map";
 
+
+.podcast-section-left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex: 1;
+    min-width: 0;
+}
+
 .podcast-page{
     background: linear-gradient(180deg, rgba(165, 96, 42, 0.45) 0%, rgba(6, 6, 6, 0.45) 100%);
     display: flex;
@@ -23,7 +32,7 @@
     font-weight: map.get(v.$font-weight, regular);
     color: v.$text-secondary;
     display: block;
-    width: 87.9rem;
+    width: 70rem;
     min-width: 0;
     white-space: nowrap;
     overflow: hidden;
