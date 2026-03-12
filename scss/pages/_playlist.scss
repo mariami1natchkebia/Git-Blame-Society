@@ -50,3 +50,10 @@
     font-size: 3.6rem;
     font-weight: map.get(v.$font-weight, bold);
 }
+
+.random {
+    background: linear-gradient(180deg, rgba(33, 38, 42, 0.45) 0%, rgba(6, 6, 6, 0.45) 100%);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
