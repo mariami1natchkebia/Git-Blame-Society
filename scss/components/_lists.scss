@@ -133,6 +133,9 @@
 
   .artist-tab-content {
     padding:4rem 2.5rem;
+    @media (max-width:v.$bp-desktop) {
+      padding:1rem 0;
+    }
   } 
 
   .track-item td:first-child {

@@ -18,6 +18,9 @@
     main {
         min-width: 0;
         padding-inline: v.$layout-gap;
+        @media (max-width:v.$bp-desktop){
+            padding-inline:0;
+        }
     }
 
     .main-content{

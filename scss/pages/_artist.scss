@@ -51,12 +51,21 @@
   bottom: 3rem;
   left: 3rem;
   right: 3rem;
+  @media (max-width:v.$bp-desktop){
+    bottom: 3rem;
+    left: 1.5rem;
+  }
 }
 
 .artist-meta-actions {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width:v.$bp-desktop){
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1rem;
+  }
 }
 
 .artist-actions {
@@ -81,6 +90,9 @@
   padding: 1rem 1rem 1rem 4.6rem;
   border-bottom: 1px solid rgba(137, 137, 137, 0.2);
   @include m.flex($justify:space-between);
+  @media (max-width:v.$bp-desktop){
+    padding:1rem;
+  }
 
   .artist-nav {
     @include m.flex($justify: flex-start);
@@ -94,6 +106,12 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    
+    @media (max-width:v.$bp-desktop){
+      li:nth-child(3), li:nth-child(4), li:nth-child(5),li:nth-child(7){
+        display: none;
+      }
+    }
   }
 
   li {
@@ -191,17 +209,25 @@
 .artist-pick-overview {
   @include m.flex($direction:column);
   gap: 3rem;
+  
 }
 
 .artist-overview {
   font-size: map.get(v.$font-size, paragraph);
   color: v.$text-secondary;
+  @media (max-width: v.$bp-desktop) {
+      padding:1rem;
+    }
 }
 
 .artist-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+
+  @media (max-width: v.$bp-desktop) {
+      justify-content: center;
+    }
 
 .artist-button {
   padding: 1rem 2rem;
@@ -225,6 +251,10 @@
     width: auto;  
   }
 
+  @media (max-width:v.$bp-desktop){
+    flex-direction: column;
+  }
+
 }
 
 .top-tracks {
@@ -237,4 +267,12 @@
   width: 32rem;
   flex-shrink: 0;
   gap: 3rem;
+  @media (max-width:v.$bp-desktop){
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.tracks-section{
+  margin-top: 2rem;
 }
