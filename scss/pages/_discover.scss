@@ -29,11 +29,23 @@
     border-radius: 1rem;
     padding: 3rem;
     background-color: rgba(#555555, 0.05);
+        @media (max-width:v.$bp-desktop){
+            flex-direction: column;
+    }
 
 }
 
 .image-album {
     position: relative;
+        img {
+            width: clamp(13rem, 12.71rem + 9.41vw, 18rem);
+        }
+}
+
+.main-picture {
+     @media (max-width:v.$bp-desktop){
+        display: none; 
+    }
 }
 
 .music-info {
@@ -41,6 +53,9 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2rem;
+        @media (max-width:v.$bp-desktop){
+            align-items: center;
+    }
 }
 
 .section-title {
@@ -111,11 +126,11 @@
 .play-album {
     display: none;
     @media (max-width:v.$bp-desktop){
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-            row-gap: 1rem;
-            margin-top: 1rem;
-        }
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+        row-gap: 1rem;
+        margin-top: 1rem;
+    }
 }
 
 .mobile {
