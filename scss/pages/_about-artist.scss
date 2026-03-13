@@ -9,7 +9,7 @@
 
   @media (max-width: v.$bp-desktop) {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
 }
 
@@ -67,9 +67,15 @@
   display: flex;
   flex-direction: column;
   gap: 2.3rem;
+  @media (max-width: v.$bp-desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: auto;
+    }
+
   h3 {
     color: v.$text-primary;
-    font-size: 3rem;
+    font-size: clamp(2rem, 2.2vw, 3rem);
     font-weight: 700;
     line-height: 1.75;
     margin-bottom: 0.4rem;
@@ -80,10 +86,6 @@
     line-height: 1.75;
     margin-bottom: 0.4rem;
     font-weight: 700;
-  }
-
-  h3 {
-    font-size: 3rem;
   }
 
   h4 {

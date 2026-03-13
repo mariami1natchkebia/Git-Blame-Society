@@ -221,3 +221,21 @@
   height: 0.3rem;
   border-radius: 50%;
 }
+.list-album-row-content,
+.album-row-content {
+  min-width: 0;
+}
+
+
+@media (max-width: v.$bp-desktop) {
+  .list-album-row-content {
+    width: 100%;
+    min-width: 0;
+    gap: 1rem;
+  }
+
+  .album-row-content {
+    flex: 1;
+    min-width: 0;
+  }
+}

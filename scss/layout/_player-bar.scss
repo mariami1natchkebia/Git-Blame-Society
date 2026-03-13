@@ -99,63 +99,63 @@
 
     }
 
-.player-center {
-  flex: 1;
-  min-width: 0;
-  justify-content: flex-start;
-  align-items: center;
-
-  .now-playing-info {
+    .player-center {
     flex: 1;
     min-width: 0;
-  }
+    justify-content: flex-start;
+    align-items: center;
 
-  .card-title {
-    display: block;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .additional-info {
-    display: inline;
-  }
-
-  .card-subtitle:last-child {
-    display: none;
-  }
-
-  p {
-    font-size: 1.4rem;
-  }
-}
-
-
-  .player-right {
-    gap: 0.4rem;
-    flex-shrink: 0;
-
-    .icon-btn {
-      width: 4rem;
-      height: 4rem;
-      padding: 0;
+    .now-playing-info {
+        flex: 1;
+        min-width: 0;
     }
 
-    .icon-btn:nth-child(1),
-    .icon-btn:nth-child(3),
-    .icon-btn:nth-child(4),
-    .icon-btn:nth-child(5),
-    .icon-btn:nth-child(7),
-    .icon-btn:nth-child(8) {
-        display: none;
-    }
-
-    .icon-btn:last-child{
+    .card-title {
         display: block;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
-    .divider-line {
+
+    .additional-info {
+        display: inline;
+    }
+
+    .card-subtitle:last-child {
         display: none;
     }
-  }
+
+    p {
+        font-size: 1.4rem;
+    }
+    }
+
+
+    .player-right {
+        gap: 0.4rem;
+        flex-shrink: 0;
+
+        .icon-btn {
+        width: 4rem;
+        height: 4rem;
+        padding: 0;
+        }
+
+        .icon-btn:nth-child(1),
+        .icon-btn:nth-child(3),
+        .icon-btn:nth-child(4),
+        .icon-btn:nth-child(5),
+        .icon-btn:nth-child(7),
+        .icon-btn:nth-child(8) {
+            display: none;
+        }
+
+        .icon-btn:last-child{
+            display: block;
+        }
+        .divider-line {
+            display: none;
+        }
+    }
 }
