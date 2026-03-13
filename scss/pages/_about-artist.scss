@@ -6,12 +6,20 @@
   @include m.flex($justify: flex-start, $align: flex-start);
   gap: 1.53rem;
   align-items: start;
+
+  @media (max-width: v.$bp-desktop) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 }
 
 .artist-badge {
   position: relative;
   width: 13.2rem;
   height: 13.2rem;
+  @media (max-width: v.$bp-desktop) {
+      display: none;
+  }
 }
 
 .artist-badge img {
@@ -50,15 +58,24 @@
   color: v.$text-primary;
   font-size: map.get(v.$font-size,paragraph);
   line-height: 1.75;
+  @media (max-width: v.$bp-desktop) {
+      font-size: map.get(v.$font-size,subtitle);
+    }
 }
 
 .artist-stats {
   display: flex;
   flex-direction: column;
   gap: 2.3rem;
+  @media (max-width: v.$bp-desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: auto;
+    }
+
   h3 {
     color: v.$text-primary;
-    font-size: 3rem;
+    font-size: clamp(2rem, 2.2vw, 3rem);
     font-weight: 700;
     line-height: 1.75;
     margin-bottom: 0.4rem;
@@ -69,10 +86,6 @@
     line-height: 1.75;
     margin-bottom: 0.4rem;
     font-weight: 700;
-  }
-
-  h3 {
-    font-size: 3rem;
   }
 
   h4 {

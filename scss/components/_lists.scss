@@ -133,6 +133,9 @@
 
   .artist-tab-content {
     padding:4rem 2.5rem;
+    @media (max-width:v.$bp-desktop) {
+      padding:1rem 0;
+    }
   } 
 
   .track-item td:first-child {
@@ -176,7 +179,7 @@
     }
 
   .background-shadow{
-    width: 12rem;
+    width: clamp(6rem, 10vw, 12rem);
     height: 0.558rem;
     border-top-left-radius: 0.725rem;
     border-top-right-radius: 0.725rem;
@@ -187,8 +190,8 @@
   .album-row-cover {
   position: relative;
   z-index: 1;
-  width: 13rem;
-  height: 13rem;
+  width: clamp(7rem, 12vw, 13rem);
+  height: clamp(7rem, 12vw, 13rem);
   object-fit: cover;
   display: block;
 }
@@ -217,4 +220,26 @@
   width:0.3rem;
   height: 0.3rem;
   border-radius: 50%;
+}
+.list-album-row-content,
+.album-row-content {
+  min-width: 0;
+}
+
+
+@media (max-width: v.$bp-desktop) {
+  .list-album-row-content {
+    width: 100%;
+    min-width: 0;
+    gap: 1rem;
+  }
+
+  .album-row-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .section-title{
+    font-size:1.6rem;
+  }
 }
