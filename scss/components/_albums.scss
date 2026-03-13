@@ -50,7 +50,7 @@
     cursor: pointer;
     transition: transform (0.3s);
     img {
-        width: 100%;
+        width: clamp(14rem, 12.8rem + 4.8vw, 17rem);
         border-radius: 50%; 
         position: relative;
     }
