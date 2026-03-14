@@ -50,6 +50,14 @@
         }
     }
 
+    .player-center a{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
+}
     .divider-line{
         height:3.6rem;
         border:0.2rem solid rgba(137, 137, 137, 0.3);
@@ -107,18 +115,20 @@
     justify-content: flex-start;
     align-items: center;
 
-    .now-playing-info {
-        flex: 1;
-        min-width: 0;
-    }
+    .now-playing-info{
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
 
-    .card-title {
-        display: block;
-        max-width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.card-title{
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
     .additional-info {
         display: inline;
