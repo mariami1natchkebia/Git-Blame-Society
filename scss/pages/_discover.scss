@@ -103,6 +103,7 @@
 }
 
 .album-play {
+    @include m.flex();
     padding: 1rem;
     gap: 1rem;
     margin-top: 0;
