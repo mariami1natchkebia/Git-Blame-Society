@@ -15,7 +15,10 @@
     background: linear-gradient(180deg, rgba(165, 96, 42, 0.45) 0%, rgba(6, 6, 6, 0.45) 100%);
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 2rem; 
+     @media (max-width:v.$bp-desktop){
+            flex-direction: column;
+        }
 }
 
 .about-podcast {
