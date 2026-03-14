@@ -63,6 +63,9 @@ body:has(#account:checked) .account-aside {
     padding:2rem;
     margin-bottom:0.5rem;
     width: 35.8rem;
+        @media (max-width:v.$bp-desktop){
+            display: none;
+        }
 
 }
 
@@ -140,6 +143,12 @@ body:has(#account:checked) .account-aside {
 
 .my-account {
     display: block;
+    width:clamp(36rem, 26.6rem + 19.4vw, 50rem) ;
+}
+
+.account-page {
+    display: flex;
+    justify-content: center;
 }
 
 
