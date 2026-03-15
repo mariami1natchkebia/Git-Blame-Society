@@ -19,6 +19,12 @@
 .filters {
 display: flex;
 gap: 1rem;
+
+@media (max-width:v.$bp-desktop){
+    .filter-btn:first-child{
+        display:none;
+    }
+}
 }
 
 // Filter checkbox menu

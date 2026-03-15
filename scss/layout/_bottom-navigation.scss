@@ -5,11 +5,12 @@
 
 .menu-navigation {
     position: fixed;
+    height:9rem;
     bottom: 0;
     left: 0;
     right: 0;
     width: auto;
-    @include m.flex;
+    @include m.flex ($justify:space-between);
 }
 
 .menu {
